@@ -49,3 +49,8 @@ detects the input path. No internet/API is used (rule-compliant).
 ## Citation
 RAKSHANEX TECHNOLOGIES (2026). "Calibration-Free Consistency-Ambiguity Gating for Safe,
 Zero-Hallucination Rule Induction on ARC-AGI." ARC Prize 2026 Paper Prize submission.
+
+
+---
+
+**AGI / Negative-Results Research:** see [README_RESEARCH.md](README_RESEARCH.md) and the `research/` directory.

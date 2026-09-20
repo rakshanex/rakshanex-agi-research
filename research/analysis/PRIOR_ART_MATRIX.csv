@@ -1,0 +1,10 @@
+mechanism,closest_prior_art,year,same_mechanism,same_claim,difference,novelty_remaining,classification
+selective prediction/abstention,El-Yaniv&Wiener selective prediction,2010,yes,yes,none,none,KNOWN_RECOMBINATION
+diverse-abstention confident-wrong reduction,risk-coverage / Geifman&El-Yaniv,2017,yes,yes,none,none,KNOWN_RECOMBINATION
+self-consistency,Wang self-consistency,2022,yes,yes,none,none,KNOWN
+capability!=mechanism,Chollet On Measure of Intelligence,2019,partial,yes,scale-instance,none,KNOWN
+representation discovery=library learning,DreamCoder Ellis,2020,yes,yes,none,none,KNOWN_RECOMBINATION
+primitive availability vs discovery,ILP predicate invention,1990s,partial,yes,not-tested-here,resource-gated,KNOWN
+search-vs-capability,program synthesis / inference-time scaling,2024,yes,yes,none,none,KNOWN
+capability not identifiable from score,benchmark identifiability/score decomposition,2025,yes,yes,none,none,KNOWN
+goal-inference bottleneck,goal misgeneralization + IRL non-identifiability,2022,yes,yes,none,none,KNOWN

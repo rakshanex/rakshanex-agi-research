@@ -1,0 +1,6 @@
+environment,model_families,N,mechanism,capability_gain,selection_effect,status
+arithmetic,Qwen2.5-7B/Mistral-7B/Phi-3.5,473x3,diverse-abstention,NO,YES(confident-wrong down via abstention),ROBUST_3_FAMILIES
+arithmetic(local),TinyLlama-1.1B,~30-473,diverse-abstention,NO,YES,VERIFIED
+ARC(smoke),Qwen2.5-7B,6,diverse-abstention,NO(0/6),YES(abstains all),INTERIM_N6
+ARC(full),Qwen2.5-7B,120,diverse-abstention,PENDING,PENDING,RUNNING
+frontier-closed,none,0,-,-,-,RESOURCE_GATED

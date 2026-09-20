@@ -1,0 +1,7 @@
+{"ideas":[
+ {"idea":"diverse-abstention adds capability","classification":"KNOWN_RECOMBINATION","reason":"= selective prediction; 7B McNemar confirms selection not capability"},
+ {"idea":"representation discovery creates out-of-closure capability","classification":"KNOWN_RECOMBINATION","reason":"= library learning; recombines, cannot invent primitives (inexpressive-vocab result)"},
+ {"idea":"7B frontier replication of selection-not-capability","classification":"KNOWN_RECOMBINATION","reason":"replication of a known effect on stronger models = robustness result, not novel mechanism"},
+ {"idea":"paired-McNemar selection-vs-capability identification on 7B","classification":"POSSIBLY_NOVEL_METHODOLOGY? -> NOT_ENOUGH_EVIDENCE","reason":"the DECOMPOSITION is a clean measurement but the method (McNemar on A-vs-abstain) is standard; classify NOT novel"}
+],
+"overall":"NO_NEW_CAPABILITY_MECHANISM_IDENTIFIED"}

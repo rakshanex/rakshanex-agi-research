@@ -1,0 +1,140 @@
+{
+  "release": "PUBLIC_RELEASE",
+  "n_files": 19,
+  "files": [
+    {
+      "file": "01_EXECUTIVE_SUMMARY.md",
+      "classification": "PUBLIC",
+      "size": 2365,
+      "sha256": "0843492e00b06f00e617931b5c5529606443efa90eca3f2231390b2ca891a6f1",
+      "purpose": "public research artifact"
+    },
+    {
+      "file": "24_PAPER_DRAFT.md",
+      "classification": "PUBLIC",
+      "size": 3574,
+      "sha256": "7ecf7386652176429d77c8cb3190c7c0dbbf0be9e30f36192f291193b1406a21",
+      "purpose": "public research artifact"
+    },
+    {
+      "file": "ARC_TRANSFER_FINAL.json",
+      "classification": "PUBLIC",
+      "size": 510,
+      "sha256": "94cbc66f098cb9e607599faf60229340aa9cfb78aebba796fbeaf51bee0f5350",
+      "purpose": "public research artifact"
+    },
+    {
+      "file": "ARC_TRANSFER_FINAL_REPORT.md",
+      "classification": "PUBLIC",
+      "size": 1657,
+      "sha256": "2201778c5a783c8010b9eba25e30502880e5681920dd2bef36cfc816885467e6",
+      "purpose": "public research artifact"
+    },
+    {
+      "file": "EXTERNAL_REPLICATION.md",
+      "classification": "PUBLIC",
+      "size": 803,
+      "sha256": "030e0ac8b84208c9a15be524822f77e7b75653aa7c9803349164354b8e538e22",
+      "purpose": "public research artifact"
+    },
+    {
+      "file": "FINAL_REPORT.md",
+      "classification": "PUBLIC",
+      "size": 5140,
+      "sha256": "e845a01ffcef941cea79d2abb5871eca18981e443766d7edca99902c3622e435",
+      "purpose": "public research artifact"
+    },
+    {
+      "file": "MODEL_GENERALIZATION_MATRIX.csv",
+      "classification": "PUBLIC",
+      "size": 475,
+      "sha256": "94729ee8d32a442591404fa9ea5599f99b3db44d959130609b770e4f1a2709a4",
+      "purpose": "public research artifact"
+    },
+    {
+      "file": "NOVELTY_LEDGER.json",
+      "classification": "PUBLIC",
+      "size": 912,
+      "sha256": "18d11a850fb9e15dbc9659554e9ca6af648c66974aca9df0b115cd8bad701ff2",
+      "purpose": "public research artifact"
+    },
+    {
+      "file": "PRIOR_ART_MATRIX.csv",
+      "classification": "PUBLIC",
+      "size": 1032,
+      "sha256": "bce2cac4f4d723733e32bf1eeded532d21b241ac5f7f995b6d17d35fb3bae729",
+      "purpose": "public research artifact"
+    },
+    {
+      "file": "STATISTICAL_SUMMARY.md",
+      "classification": "PUBLIC",
+      "size": 2958,
+      "sha256": "6d7e8f4fefa667db76f7a7a4b2515ccbd1bc9e9da3f03d92e0c7e6a05bda1298",
+      "purpose": "public research artifact"
+    },
+    {
+      "file": "THEORY.md",
+      "classification": "PUBLIC",
+      "size": 970,
+      "sha256": "c83d7123ea56be2b6f353189f3b4ea7152bdccaa750600f991dd08136c8023a5",
+      "purpose": "public research artifact"
+    },
+    {
+      "file": "arc_transfer_runner.py",
+      "classification": "PUBLIC",
+      "size": 4397,
+      "sha256": "e4637c8521d23373fc0f9a5ca71922fc54e4c57d3347717fb4231a518c2d00f1",
+      "purpose": "public research artifact"
+    },
+    {
+      "file": "benchmark_v1_locked.json",
+      "classification": "PUBLIC",
+      "size": 69165,
+      "sha256": "65011a2ccd624e6a3d56d533975f9849be9ed492c8ca5b9bf8aacd458ae17d98",
+      "purpose": "public research artifact"
+    },
+    {
+      "file": "counterexample_test.py",
+      "classification": "PUBLIC",
+      "size": 4798,
+      "sha256": "f0f5c7118de0f51a115ecf06aa3d886c48df75a890c3659128dc0e80ffaf7bc8",
+      "purpose": "public research artifact"
+    },
+    {
+      "file": "kaggle_frontier_runner.py",
+      "classification": "PUBLIC",
+      "size": 5492,
+      "sha256": "5dc076494212f499874a3ff5ef64d1a5db35e94d36983a22a900d00e04760983",
+      "purpose": "public research artifact"
+    },
+    {
+      "file": "reproduce.sh",
+      "classification": "PUBLIC",
+      "size": 933,
+      "sha256": "44c0177d6d04d6d81dfb91083929769ab8435595c3dd475cd74250961f59a242",
+      "purpose": "public research artifact"
+    },
+    {
+      "file": "reproduce_core.py",
+      "classification": "PUBLIC",
+      "size": 2083,
+      "sha256": "13efed8ea4c8ce37d9bc99297f92b4ef3027207c7d84baa78e22d7b81d7e49a1",
+      "purpose": "public research artifact"
+    },
+    {
+      "file": "runner.py",
+      "classification": "PUBLIC",
+      "size": 10800,
+      "sha256": "afdbfc8960f05e5650162d1b8a9c0e224ea1d2e8eb2bb8ca4766a576eee1dda3",
+      "purpose": "public research artifact"
+    },
+    {
+      "file": "three_family_synthesis.json",
+      "classification": "PUBLIC",
+      "size": 1618,
+      "sha256": "c2d84e77a1ef258f02de3984e9a22ec59b3b06eee49e2047c34125594dcfda9e",
+      "purpose": "public research artifact"
+    }
+  ],
+  "secret_rescan_blocked": []
+}

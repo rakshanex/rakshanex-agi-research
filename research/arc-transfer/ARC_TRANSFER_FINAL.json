@@ -1,0 +1,30 @@
+{
+  "N": 120,
+  "failed": 0,
+  "dupes": 0,
+  "subset_sha_match": true,
+  "A_acc": 0.0,
+  "A_acc_CI": [
+    0.0,
+    0,
+    0.031
+  ],
+  "A_confident_wrong": 120,
+  "B_all_acc": 0.0,
+  "B_coverage": 0.0083,
+  "B_coverage_CI": [
+    0.0083,
+    0.0015,
+    0.0457
+  ],
+  "B_acc_on_answered": 0.0,
+  "B_confident_wrong": 1,
+  "A_right_B_abstain": 0,
+  "A_wrong_B_right": 0,
+  "mcnemar_ab": [
+    0,
+    1.0
+  ],
+  "determination": "SELECTION/ABSTENTION transfer; no net capability gain",
+  "model": "Qwen2.5-7B"
+}
