@@ -17,3 +17,11 @@ the core; Python stdlib only; runs in ~10 minutes.
 If you run it: please report your raw outputs + your environment (INDEPENDENCE_ATTESTATION.json). Contradictions
 and partial replications are equally welcome — the goal is honest validation, not confirming my result.
 Thanks!
+
+---
+## Structural blindness (2026-09-22)
+The original operator's results are preserved (unaltered) under `original_outputs/` — DO NOT open before running.
+The replication path (R1/R2/R3 runners) ships with EMPTY output dirs; runners regenerate outputs locally.
+The original evidence has NOT been deleted or altered (see original_outputs/manifests/EVIDENCE_HASHES.txt).
+Note: R1 scores a locked candidate input (candidate_locked.json) which reveals the aggregate result if inspected;
+for a fully blind R1, score independently from the benchmark. R2 and R3 are fully blind.

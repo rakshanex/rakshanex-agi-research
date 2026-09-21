@@ -1,0 +1,4 @@
+# Replicator-generated outputs must NOT be committed (blindness). Runners regenerate these locally.
+R1_SELECTIVE_PREDICTION/analysis/R1_ANALYSIS.json
+R2_SEARCH_BOUNDARY/raw/failure_surface.json
+R3_EVALUATION_INVARIANCE/raw/stage1.json
