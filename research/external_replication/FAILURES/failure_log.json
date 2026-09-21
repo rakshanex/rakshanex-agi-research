@@ -1,0 +1,9 @@
+{
+  "failures": [
+    {
+      "code": "REPLICATION_BLOCKED_COMPUTE",
+      "target": "R4_local",
+      "reason": "14B/7B need GPU; local MX350 2GB insufficient; run on free Kaggle instead"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "runs": [
+    {
+      "seed": 1234,
+      "layer1_Itask": {
+        "identity": 1.0,
+        "shuffle_examples": 1.0,
+        "value_permute": 1.0
+      },
+      "layer2_policy": {
+        "policy_depth1": 0.375,
+        "policy_depth2": 0.8,
+        "policy_depth3": 1.0
+      }
+    },
+    {
+      "seed": 2025,
+      "layer1_Itask": {
+        "identity": 1.0,
+        "shuffle_examples": 1.0,
+        "value_permute": 1.0
+      },
+      "layer2_policy": {
+        "policy_depth1": 0.425,
+        "policy_depth2": 0.775,
+        "policy_depth3": 1.0
+      }
+    },
+    {
+      "seed": 7,
+      "layer1_Itask": {
+        "identity": 1.0,
+        "shuffle_examples": 1.0,
+        "value_permute": 1.0
+      },
+      "layer2_policy": {
+        "policy_depth1": 0.525,
+        "policy_depth2": 0.9,
+        "policy_depth3": 1.0
+      }
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "S0": {
+    "answered": 3000,
+    "accuracy": 0.3977,
+    "acc_ci95": [
+      0.3977,
+      0.3803,
+      0.4153
+    ],
+    "confident_wrong": 1807,
+    "cw_rate": 0.6023
+  },
+  "S1": {
+    "answered": 2505,
+    "accuracy": 0.6343,
+    "acc_ci95": [
+      0.6343,
+      0.6153,
+      0.653
+    ],
+    "confident_wrong": 916,
+    "cw_rate": 0.3657
+  },
+  "S2": {
+    "answered": 934,
+    "accuracy": 0.8737,
+    "acc_ci95": [
+      0.8737,
+      0.8508,
+      0.8934
+    ],
+    "confident_wrong": 118,
+    "cw_rate": 0.1263
+  },
+  "S3": {
+    "answered": 2975,
+    "accuracy": 0.8212,
+    "acc_ci95": [
+      0.8212,
+      0.807,
+      0.8345
+    ],
+    "confident_wrong": 532,
+    "cw_rate": 0.1788
+  },
+  "S4": {
+    "answered": 2863,
+    "accuracy": 1.0,
+    "acc_ci95": [
+      1.0,
+      0.9987,
+      1.0
+    ],
+    "confident_wrong": 0,
+    "cw_rate": 0.0
+  }
+}

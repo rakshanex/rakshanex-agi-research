@@ -1,0 +1,8 @@
+{
+  "os": "Linux-7.0.0-31-generic-x86_64-with-glibc2.39",
+  "python": "3.12.3",
+  "cpu_cores": 8,
+  "ram_gb": 7.5,
+  "gpu": "MX350 2GB (unused; R1/R2/R3 CPU-only)",
+  "deterministic": true
+}
