@@ -1,4 +1,5 @@
 cff-version: 1.2.0
+doi: 10.5281/zenodo.22918434
 message: "If you use this work, please cite it as below."
 title: "Operating-Point vs Capability: A Preregistered, Reproducible Negative Study of Inference-Time Mechanisms in ARC-Style Reasoning, with a Machine-Checked Lemma Corpus"
 authors:

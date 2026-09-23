@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22918434.svg)](https://doi.org/10.5281/zenodo.22918434)
+
 # RAKSHANEX — ARC Prize 2026 Submission (ARC-AGI-2 track)
 
 **Calibration-Free Consistency-Ambiguity Gating for Safe, Zero-Hallucination Rule Induction**

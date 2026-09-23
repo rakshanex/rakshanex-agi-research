@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+doi: 10.5281/zenodo.22918434
+message: "If you use this work, please cite it using the DOI below."
+title: "RAKSHANEX AGI Research: Operating-Point vs Capability + machine-checked Lean library"
+authors:
+  - family-names: "Kumar"
+    given-names: "Piyush"
+    affiliation: "RAKSHANEX TECHNOLOGIES"
+year: 2026
+license: "CC-BY-4.0"
+version: "v1.0"
+repository-code: "https://github.com/rakshanex/rakshanex-agi-research"
