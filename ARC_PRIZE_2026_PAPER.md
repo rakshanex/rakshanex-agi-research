@@ -2,7 +2,7 @@
 
 **ARC Prize 2026 — Paper Prize submission (ARC-AGI-2 track)**
 **Author/Org:** RAKSHANEX TECHNOLOGIES
-**Code:** self-contained Kaggle notebook `arc_prize_submission.py` (numpy only; no internet/LLM).
+**Code:** self-contained numpy-only Kaggle solver (code withheld from public release to protect ongoing work; available from author on request; method fully described herein).
 **License:** MIT-0 (see LICENSE). All artifacts open-source.
 
 ---

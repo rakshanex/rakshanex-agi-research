@@ -13,7 +13,7 @@ Result on ARC-AGI-1 public training: **40 solved, 0 wrong (100% answered-precisi
 The same principle holds on ARC-AGI-2 and four non-ARC domains (see paper).
 
 ## Files
-- `arc_prize_submission.py` — self-contained Kaggle submission script (no internet/LLM).
+- ARC solver code: the ARC solver implementation (RAKSHANEX object-DSL + consistency filter + ambiguity-meter) is **withheld from the public release to protect ongoing work**; available from the author on reasonable request. Method is described in the paper.
 - `ARC_PRIZE_2026_PAPER.md` — the paper (rubric format).
 - `LICENSE` — MIT-0.
 - Supporting research trail: `RAKSHANEX_*.md`, `rakshanex_*.py` (phases, audits, cross-domain).
@@ -29,14 +29,12 @@ Requirements: Python 3.10+, numpy.
 ```
 # ARC-AGI-1 (expects arc_full/data/training/*.json  — github.com/fchollet/ARC-AGI)
 # ARC-AGI-2 (expects arc_agi2/data/training/*.json — github.com/arcprize/ARC-AGI-2)
-python3 arc_prize_submission.py     # dry-run: writes a sample submission.json, prints counts
 ```
 To score the safety metric (solved / wrong / abstain, all test pairs), see
 `rakshanex_phase11_varlocal.py` (full solver) and `verify_safety_module.py`.
 
 ## Kaggle submission
 On Kaggle, the notebook reads the competition test file from `/kaggle/input/...` and
-writes `submission.json` to `/kaggle/working/`. `arc_prize_submission.py:main()` auto-
 detects the input path. No internet/API is used (rule-compliant).
 
 ## Honest scope

@@ -4,8 +4,7 @@ This repository (formerly `arc-prize-2026`) contains RAKSHANEX's ARC-AGI and AGI
 organized into three clearly distinct work streams:
 
 ## 1. ARC-Prize 2026 submission (original)
-The ARC Prize 2026 Paper-Prize material: `ARC_PRIZE_2026_PAPER.md`, `arc_prize_submission.py`,
-`kaggle_notebook_RAKSHANEX.py`, learning foundations, and positioning docs. Preserved unchanged.
+The ARC Prize 2026 Paper-Prize material: `ARC_PRIZE_2026_PAPER.md`, learning foundations, and positioning docs. Preserved unchanged.
 
 ## 2. AGI research (learning + planning)
 `AGI_LEARNING_FOUNDATIONS.md`, `10_YEAR_AGI_PLAN.md`, `LEARN_LEVEL_*` — study/roadmap material.

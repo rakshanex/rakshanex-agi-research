@@ -42,6 +42,6 @@ Aaj: Sep 17, 2026 — **~52 din bache.**
   open-source, cited-able research artifact under your/RAKSHANEX name.
 
 ## REPO CONTENTS (all live, public)
-arc_prize_submission.py · kaggle_notebook_RAKSHANEX.py · ARC_PRIZE_2026_PAPER.md ·
+ARC_PRIZE_2026_PAPER.md ·
 RAKSHANEX_positioning_vs_solvers.md · LICENSE (MIT-0) · README.md · SUBMISSION_README.md ·
 SUBMISSION_CHECKLIST.md
