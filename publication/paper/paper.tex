@@ -1,0 +1,51 @@
+\documentclass{article}
+\usepackage{tmlr}
+\usepackage{booktabs}
+\usepackage{amsmath}
+
+\title{Operating-Point versus Capability: A Preregistered, Blind, Deterministic Reproducibility Study of Inference-Time Mechanisms in ARC-Style Reasoning}
+
+% Double-blind submission: authors anonymized per TMLR policy.
+\author{Anonymous authors\\Paper under double-blind review}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+When an inference-time mechanism improves a benchmark score, is the gain \emph{capability}, or a change in the coverage/confident-error operating point? We report a preregistered, adversarially-audited program (62 recorded claims, 34 documented failures, 46 experiments) that separates capability from answer-selection, abstention, verification, search, and evaluation policy using controlled deterministic experiments and a symbolic-solver invariance baseline. Across three open-weight families (Qwen2.5-7B, Mistral-7B, Phi-3.5-mini; $N{=}473$ each) and a 120-task ARC transfer subset, a diverse-prompt abstention mechanism reduces confident-wrong errors primarily by abstaining (reducing coverage), with no net capability gain (mechanism all-task accuracy $\le$ baseline everywhere). A purported composition-depth ``capability wall'' is \emph{search-limited}: it recovers fully as search depth increases at fixed capability. Benchmark score is \emph{not invariant} to construct-irrelevant presentation and evaluation-policy changes (selection policy alone moves accuracy $\sim$60pp at fixed capability), while a capability-grounded symbolic solver is exactly invariant. An apparent $\le$9B$\to$14B parity ``transition'' \emph{did not reproduce} under a fresh balanced forced-answer comparison (7B 0.80 $\approx$ 14B 0.825). We claim no novel mechanism; every effect maps to known theory. The contribution is a reproducible negative synthesis plus benchmark-design lessons, released as a public, CPU-only, standard-library replication package. External independent replication is \emph{pending}.
+\end{abstract}
+
+\section{Introduction}
+Reported gains from inference-time methods are often ambiguous between genuine capability and operating-point shifts. We distinguish six variables and hold candidate generation fixed while varying selection, abstention, verification, search, and evaluation policy. The work reads as evaluation/reproducibility research; it does not establish any universal or AGI capability claim.
+
+\section{Related Work}
+Selective prediction and the reject option \citep{elyaniv2010}; capability versus skill \citep{chollet2019}; library learning / search \citep{ellis2020}; emergence-as-artifact \citep{schaeffer2023}; prompt/format sensitivity \citep{sclar2023}. All mechanisms here are \textbf{KNOWN}; our contribution is a controlled deterministic demonstration and honest negative synthesis, not a new mechanism.
+
+\section{Methods}
+Preregistered A/B: A = greedy always-answer; B = three diverse prompts, unanimous-or-abstain. We separate \emph{candidate generation} from \emph{candidate selection}. Metrics: accuracy, coverage, selective accuracy, confident-wrong. Statistics: Wilson 95\% CIs, paired McNemar, Fisher exact, TOST ($\pm$5pp). Seeds $\{1234,2025,7\}$. Benchmark locked (SHA256 \texttt{78446ba9\ldots}, 473 tasks). Open-weight models on free T4/P100.
+
+\section{Formal Model}
+Let $C$ (capability), $A$ (answer-selection), $V$ (verification), $Q$ (confidence quality), $R$ (search), $Y$ (correctness). $C$ is latent; $A,V,R,Y$ are observed under intervention. The LLM-side decomposition is \emph{partially identified}: we can bound the selection/abstention contribution but do not claim full causal identification of $C$.
+
+\section{Results}
+\textbf{Three families.} Confident-wrong falls (Qwen 182$\to$4, Mistral 252$\to$19, Phi 124$\to$9) via abstention; B all-task accuracy $\le$ A in all three (no net capability gain). \textbf{ARC transfer.} A 0/120; B abstains $\sim$99\%, 0 solved. \textbf{Search-limited boundary.} Composition-depth failure recovers as search depth rises (M4 $0.033\to1.0$): \textbf{BOUNDARY\_CONFOUNDED (search-limited)}, not a capability wall. \textbf{Evaluation (non)invariance.} Symbolic solver exactly invariant ($I_{\mathrm{task}}{=}1.0$); LLM score shifts $\sim$60pp (selection) at fixed capability. \textbf{Scale (corrected).} Fresh balanced forced-answer: 7B 0.80 $\approx$ 14B 0.825 --- the earlier gap did not reproduce (\textbf{TRANSITION\_CONFOUNDED + KNOWN\_EFFECT}); 14B does recognize parity on held-out data (even 0.92 / odd 0.78, Fisher $p{=}4.6\mathrm{e}{-}13$), a narrow base-capability effect, not general reasoning.
+
+\section{Limitations}
+Synthetic/micro-world tasks; three families; $\le$14B; benchmark contamination concern (parity likely pretrained); distribution-shift unresolved; R1 partial-by-design blindness; external replication pending; ARC transfer not justified; no universal AGI capability claim is established.
+
+\section{Reproducibility Statement}
+Public repository (anonymized for review) at a pinned commit; benchmark SHA256 \texttt{78446ba9\ldots} (473 tasks); R1/R2/R3 runners use the Python standard library only (CPU, deterministic, no network/API); measured runtimes R1 0.02s, R2 0.10s, R3 0.06s; seeds $\{1234,2025,7\}$. Original operator outputs are preserved under a separate directory; R2/R3 replication paths are blind; R1 is partial-by-design; external replication remains pending.
+
+\section{Conclusion}
+Inference-time mechanisms shift the operating point (selection/abstention/search), not capability, across three families and ARC; benchmark scores are not invariant to construct-irrelevant conditions. Key lesson: answer-balance evaluations and report under fixed policy, validated presentation, and matched compute.
+
+\bibliographystyle{tmlr}
+\begin{thebibliography}{9}
+\bibitem[El-Yaniv \& Wiener(2010)]{elyaniv2010} El-Yaniv, R. and Wiener, Y. On the foundations of noise-free selective classification. JMLR, 2010.
+\bibitem[Chollet(2019)]{chollet2019} Chollet, F. On the Measure of Intelligence. arXiv:1911.01547, 2019.
+\bibitem[Ellis et al.(2020)]{ellis2020} Ellis, K. et al. DreamCoder. arXiv, 2020.
+\bibitem[Schaeffer et al.(2023)]{schaeffer2023} Schaeffer, R. et al. Are Emergent Abilities a Mirage? NeurIPS, 2023.
+\bibitem[Sclar et al.(2023)]{sclar2023} Sclar, M. et al. Quantifying LM Sensitivity to Prompt Formatting. arXiv, 2023.
+\end{thebibliography}
+
+\end{document}

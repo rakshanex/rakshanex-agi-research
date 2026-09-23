@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+title: "Operating-Point vs Capability: A Preregistered, Reproducible Negative Study of Inference-Time Mechanisms in ARC-Style Reasoning, with a Machine-Checked Lemma Corpus"
+authors:
+  - family-names: "Kumar"
+    given-names: "Piyush"
+    affiliation: "RAKSHANEX TECHNOLOGIES"
+    email: "mr.piyush295@gmail.com"
+year: 2026
+license: "CC-BY-4.0"
+repository-code: "https://github.com/rakshanex/rakshanex-agi-research"
+keywords: ["selective prediction","LLM evaluation","reproducibility","negative results","formal verification","Lean","Collatz","ARC"]

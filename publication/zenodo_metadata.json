@@ -1,0 +1,5 @@
+{"title":"Operating-Point vs Capability: A Preregistered Reproducible Negative Study of Inference-Time Mechanisms (+ Lean-verified lemma corpus)",
+ "creators":[{"name":"Kumar, Piyush","affiliation":"RAKSHANEX TECHNOLOGIES"}],
+ "upload_type":"publication","publication_type":"preprint","license":"cc-by-4.0",
+ "keywords":["selective prediction","LLM evaluation","reproducibility","negative results","Lean formal verification","Collatz","ARC-AGI"],
+ "description":"90-experiment preregistered study: inference-time mechanisms shift the evaluation operating point (selection/abstention/verification/search), not underlying capability; reproduced across 3 open-weight model families; 10 machine-checked (Lean 4, kernel-verified, no sorry) elementary lemmas incl. a scoped Collatz-local descent lemma; full negative-results record + reproducible package. No novel theorem or solved open problem claimed."}

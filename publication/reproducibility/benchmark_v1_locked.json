@@ -1,0 +1,3331 @@
+{
+  "benchmark": "breaker_v1_locked",
+  "version": "1.0",
+  "seed": 20260919,
+  "n": 473,
+  "kinds": [
+    "order_ops",
+    "near_round",
+    "parity_trap",
+    "units"
+  ],
+  "grading": "confident-wrong = answered AND answer != gold; abstain excluded from wrong",
+  "known_notes": [
+    "parity_trap gold is constant 1 (odd) by construction - flagged",
+    "gold!=trap enforced; prompts unique; 125 per kind"
+  ],
+  "tasks": [
+    {
+      "kind": "order_ops",
+      "prompt": "Compute 5 + 13 * 6.",
+      "gold": 83,
+      "trap": 108,
+      "id": 0
+    },
+    {
+      "kind": "order_ops",
+      "prompt": "Compute 12 + 14 * 19.",
+      "gold": 278,
+      "trap": 494,
+      "id": 1
+    },
+    {
+      "kind": "order_ops",
+      "prompt": "Compute 10 + 3 * 4.",
+      "gold": 22,
+      "trap": 52,
+      "id": 2
+    },
+    {
+      "kind": "order_ops",
+      "prompt": "Compute 15 + 4 * 19.",
+      "gold": 91,
+      "trap": 361,
+      "id": 3
+    },
+    {
+      "kind": "order_ops",
+      "prompt": "Compute 2 + 12 * 20.",
+      "gold": 242,
+      "trap": 280,
+      "id": 4
+    },
+    {
+      "kind": "order_ops",
+      "prompt": "Compute 2 + 14 * 2.",
+      "gold": 30,
+      "trap": 32,
+      "id": 5
+    },
+    {
+      "kind": "order_ops",
+      "prompt": "Compute 3 + 17 * 9.",
+      "gold": 156,
+      "trap": 180,
+      "id": 6
+    },
+    {
+      "kind": "order_ops",
+      "prompt": "Compute 19 + 2 * 10.",
+      "gold": 39,
+      "trap": 210,
+      "id": 7
+    },
+    {
+      "kind": "order_ops",
+      "prompt": "Compute 19 + 19 * 7.",
+      "gold": 152,
+      "trap": 266,
+      "id": 8
+    },
+    {
+      "kind": "order_ops",
+      "prompt": "Compute 6 + 12 * 17.",
+      "gold": 210,
+      "trap": 306,
+      "id": 9
+    },
+    {
+      "kind": "order_ops",
+      "prompt": "Compute 5 + 5 * 4.",
+      "gold": 25,
+      "trap": 40,
+      "id": 10
+    },
+    {
+      "kind": "order_ops",
+      "prompt": "Compute 2 + 2 * 8.",
+      "gold": 18,
+      "trap": 32,
+      "id": 11
+    },
+    {
+      "kind": "order_ops",
+      "prompt": "Compute 10 + 6 * 4.",
+      "gold": 34,
+      "trap": 64,
+      "id": 12
+    },
+    {
+      "kind": "order_ops",
+      "prompt": "Compute 17 + 13 * 10.",
+      "gold": 147,
+      "trap": 300,
+      "id": 13
+    },
+    {
+      "kind": "order_ops",
+      "prompt": "Compute 2 + 15 * 15.",
+      "gold": 227,
+      "trap": 255,
+      "id": 14
+    },
+    {
+      "kind": "order_ops",
+      "prompt": "Compute 20 + 18 * 9.",
+      "gold": 182,
+      "trap": 342,
+      "id": 15
+    },
+    {
+      "kind": "order_ops",
+      "prompt": "Compute 5 + 4 * 4.",
+      "gold": 21,
+      "trap": 36,
+      "id": 16
+    },
+    {
+      "kind": "order_ops",
+      "prompt": "Compute 9 + 7 * 3.",
+      "gold": 30,
+      "trap": 48,
+      "id": 17
+    },
+    {
+      "kind": "order_ops",
+      "prompt": "Compute 16 + 9 * 7.",
+      "gold": 79,
+      "trap": 175,
+      "id": 18
+    },
+    {
+      "kind": "order_ops",
+      "prompt": "Compute 19 + 20 * 17.",
+      "gold": 359,
+      "trap": 663,
+      "id": 19
+    },
+    {
+      "kind": "order_ops",
+      "prompt": "Compute 15 + 7 * 19.",
+      "gold": 148,
+      "trap": 418,
+      "id": 20
+    },
+    {
+      "kind": "order_ops",
+      "prompt": "Compute 3 + 19 * 20.",
+      "gold": 383,
+      "trap": 440,
+      "id": 21
+    },
+    {
+      "kind": "order_ops",
+      "prompt": "Compute 11 + 7 * 7.",
+      "gold": 60,
+      "trap": 126,
+      "id": 22
+    },
+    {
+      "kind": "order_ops",
+      "prompt": "Compute 16 + 3 * 8.",
+      "gold": 40,
+      "trap": 152,
+      "id": 23
+    },
+    {
+      "kind": "order_ops",
+      "prompt": "Compute 5 + 4 * 20.",
+      "gold": 85,
+      "trap": 180,
+      "id": 24
+    },
+    {
+      "kind": "order_ops",
+      "prompt": "Compute 13 + 19 * 19.",
+      "gold": 374,
+      "trap": 608,
+      "id": 25
+    },
+    {
+      "kind": "order_ops",
+      "prompt": "Compute 4 + 13 * 4.",
+      "gold": 56,
+      "trap": 68,
+      "id": 26
+    },
+    {
+      "kind": "order_ops",
+      "prompt": "Compute 7 + 15 * 6.",
+      "gold": 97,
+      "trap": 132,
+      "id": 27
+    },
+    {
+      "kind": "order_ops",
+      "prompt": "Compute 11 + 19 * 14.",
+      "gold": 277,
+      "trap": 420,
+      "id": 28
+    },
+    {
+      "kind": "order_ops",
+      "prompt": "Compute 17 + 8 * 8.",
+      "gold": 81,
+      "trap": 200,
+      "id": 29
+    },
+    {
+      "kind": "order_ops",
+      "prompt": "Compute 4 + 19 * 12.",
+      "gold": 232,
+      "trap": 276,
+      "id": 30
+    },
+    {
+      "kind": "order_ops",
+      "prompt": "Compute 5 + 8 * 11.",
+      "gold": 93,
+      "trap": 143,
+      "id": 31
+    },
+    {
+      "kind": "order_ops",
+      "prompt": "Compute 18 + 11 * 9.",
+      "gold": 117,
+      "trap": 261,
+      "id": 32
+    },
+    {
+      "kind": "order_ops",
+      "prompt": "Compute 8 + 11 * 14.",
+      "gold": 162,
+      "trap": 266,
+      "id": 33
+    },
+    {
+      "kind": "order_ops",
+      "prompt": "Compute 14 + 16 * 10.",
+      "gold": 174,
+      "trap": 300,
+      "id": 34
+    },
+    {
+      "kind": "order_ops",
+      "prompt": "Compute 4 + 14 * 19.",
+      "gold": 270,
+      "trap": 342,
+      "id": 35
+    },
+    {
+      "kind": "order_ops",
+      "prompt": "Compute 2 + 16 * 2.",
+      "gold": 34,
+      "trap": 36,
+      "id": 36
+    },
+    {
+      "kind": "order_ops",
+      "prompt": "Compute 2 + 19 * 15.",
+      "gold": 287,
+      "trap": 315,
+      "id": 37
+    },
+    {
+      "kind": "order_ops",
+      "prompt": "Compute 12 + 12 * 3.",
+      "gold": 48,
+      "trap": 72,
+      "id": 38
+    },
+    {
+      "kind": "order_ops",
+      "prompt": "Compute 4 + 13 * 14.",
+      "gold": 186,
+      "trap": 238,
+      "id": 39
+    },
+    {
+      "kind": "order_ops",
+      "prompt": "Compute 9 + 9 * 3.",
+      "gold": 36,
+      "trap": 54,
+      "id": 40
+    },
+    {
+      "kind": "order_ops",
+      "prompt": "Compute 14 + 7 * 14.",
+      "gold": 112,
+      "trap": 294,
+      "id": 41
+    },
+    {
+      "kind": "order_ops",
+      "prompt": "Compute 9 + 19 * 6.",
+      "gold": 123,
+      "trap": 168,
+      "id": 42
+    },
+    {
+      "kind": "order_ops",
+      "prompt": "Compute 10 + 2 * 12.",
+      "gold": 34,
+      "trap": 144,
+      "id": 43
+    },
+    {
+      "kind": "order_ops",
+      "prompt": "Compute 19 + 14 * 5.",
+      "gold": 89,
+      "trap": 165,
+      "id": 44
+    },
+    {
+      "kind": "order_ops",
+      "prompt": "Compute 7 + 8 * 11.",
+      "gold": 95,
+      "trap": 165,
+      "id": 45
+    },
+    {
+      "kind": "order_ops",
+      "prompt": "Compute 18 + 8 * 11.",
+      "gold": 106,
+      "trap": 286,
+      "id": 46
+    },
+    {
+      "kind": "order_ops",
+      "prompt": "Compute 7 + 7 * 17.",
+      "gold": 126,
+      "trap": 238,
+      "id": 47
+    },
+    {
+      "kind": "order_ops",
+      "prompt": "Compute 4 + 9 * 5.",
+      "gold": 49,
+      "trap": 65,
+      "id": 48
+    },
+    {
+      "kind": "order_ops",
+      "prompt": "Compute 20 + 14 * 9.",
+      "gold": 146,
+      "trap": 306,
+      "id": 49
+    },
+    {
+      "kind": "order_ops",
+      "prompt": "Compute 5 + 5 * 19.",
+      "gold": 100,
+      "trap": 190,
+      "id": 50
+    },
+    {
+      "kind": "order_ops",
+      "prompt": "Compute 13 + 3 * 20.",
+      "gold": 73,
+      "trap": 320,
+      "id": 51
+    },
+    {
+      "kind": "order_ops",
+      "prompt": "Compute 3 + 7 * 8.",
+      "gold": 59,
+      "trap": 80,
+      "id": 52
+    },
+    {
+      "kind": "order_ops",
+      "prompt": "Compute 3 + 9 * 4.",
+      "gold": 39,
+      "trap": 48,
+      "id": 53
+    },
+    {
+      "kind": "order_ops",
+      "prompt": "Compute 18 + 4 * 2.",
+      "gold": 26,
+      "trap": 44,
+      "id": 54
+    },
+    {
+      "kind": "order_ops",
+      "prompt": "Compute 15 + 17 * 14.",
+      "gold": 253,
+      "trap": 448,
+      "id": 55
+    },
+    {
+      "kind": "order_ops",
+      "prompt": "Compute 7 + 4 * 12.",
+      "gold": 55,
+      "trap": 132,
+      "id": 56
+    },
+    {
+      "kind": "order_ops",
+      "prompt": "Compute 11 + 7 * 20.",
+      "gold": 151,
+      "trap": 360,
+      "id": 57
+    },
+    {
+      "kind": "order_ops",
+      "prompt": "Compute 17 + 17 * 17.",
+      "gold": 306,
+      "trap": 578,
+      "id": 58
+    },
+    {
+      "kind": "order_ops",
+      "prompt": "Compute 20 + 20 * 6.",
+      "gold": 140,
+      "trap": 240,
+      "id": 59
+    },
+    {
+      "kind": "order_ops",
+      "prompt": "Compute 19 + 18 * 10.",
+      "gold": 199,
+      "trap": 370,
+      "id": 60
+    },
+    {
+      "kind": "order_ops",
+      "prompt": "Compute 3 + 2 * 14.",
+      "gold": 31,
+      "trap": 70,
+      "id": 61
+    },
+    {
+      "kind": "order_ops",
+      "prompt": "Compute 3 + 5 * 10.",
+      "gold": 53,
+      "trap": 80,
+      "id": 62
+    },
+    {
+      "kind": "order_ops",
+      "prompt": "Compute 2 + 13 * 11.",
+      "gold": 145,
+      "trap": 165,
+      "id": 63
+    },
+    {
+      "kind": "order_ops",
+      "prompt": "Compute 12 + 9 * 5.",
+      "gold": 57,
+      "trap": 105,
+      "id": 64
+    },
+    {
+      "kind": "order_ops",
+      "prompt": "Compute 12 + 18 * 10.",
+      "gold": 192,
+      "trap": 300,
+      "id": 65
+    },
+    {
+      "kind": "order_ops",
+      "prompt": "Compute 11 + 4 * 13.",
+      "gold": 63,
+      "trap": 195,
+      "id": 66
+    },
+    {
+      "kind": "order_ops",
+      "prompt": "Compute 15 + 4 * 4.",
+      "gold": 31,
+      "trap": 76,
+      "id": 67
+    },
+    {
+      "kind": "order_ops",
+      "prompt": "Compute 13 + 19 * 18.",
+      "gold": 355,
+      "trap": 576,
+      "id": 68
+    },
+    {
+      "kind": "order_ops",
+      "prompt": "Compute 4 + 8 * 16.",
+      "gold": 132,
+      "trap": 192,
+      "id": 69
+    },
+    {
+      "kind": "order_ops",
+      "prompt": "Compute 7 + 9 * 5.",
+      "gold": 52,
+      "trap": 80,
+      "id": 70
+    },
+    {
+      "kind": "order_ops",
+      "prompt": "Compute 16 + 13 * 16.",
+      "gold": 224,
+      "trap": 464,
+      "id": 71
+    },
+    {
+      "kind": "order_ops",
+      "prompt": "Compute 12 + 13 * 8.",
+      "gold": 116,
+      "trap": 200,
+      "id": 72
+    },
+    {
+      "kind": "order_ops",
+      "prompt": "Compute 17 + 5 * 13.",
+      "gold": 82,
+      "trap": 286,
+      "id": 73
+    },
+    {
+      "kind": "order_ops",
+      "prompt": "Compute 19 + 2 * 6.",
+      "gold": 31,
+      "trap": 126,
+      "id": 74
+    },
+    {
+      "kind": "order_ops",
+      "prompt": "Compute 16 + 17 * 13.",
+      "gold": 237,
+      "trap": 429,
+      "id": 75
+    },
+    {
+      "kind": "order_ops",
+      "prompt": "Compute 16 + 12 * 18.",
+      "gold": 232,
+      "trap": 504,
+      "id": 76
+    },
+    {
+      "kind": "order_ops",
+      "prompt": "Compute 16 + 4 * 17.",
+      "gold": 84,
+      "trap": 340,
+      "id": 77
+    },
+    {
+      "kind": "order_ops",
+      "prompt": "Compute 19 + 10 * 16.",
+      "gold": 179,
+      "trap": 464,
+      "id": 78
+    },
+    {
+      "kind": "order_ops",
+      "prompt": "Compute 3 + 20 * 8.",
+      "gold": 163,
+      "trap": 184,
+      "id": 79
+    },
+    {
+      "kind": "order_ops",
+      "prompt": "Compute 19 + 10 * 5.",
+      "gold": 69,
+      "trap": 145,
+      "id": 80
+    },
+    {
+      "kind": "order_ops",
+      "prompt": "Compute 9 + 2 * 4.",
+      "gold": 17,
+      "trap": 44,
+      "id": 81
+    },
+    {
+      "kind": "order_ops",
+      "prompt": "Compute 17 + 19 * 8.",
+      "gold": 169,
+      "trap": 288,
+      "id": 82
+    },
+    {
+      "kind": "order_ops",
+      "prompt": "Compute 16 + 7 * 7.",
+      "gold": 65,
+      "trap": 161,
+      "id": 83
+    },
+    {
+      "kind": "order_ops",
+      "prompt": "Compute 3 + 4 * 16.",
+      "gold": 67,
+      "trap": 112,
+      "id": 84
+    },
+    {
+      "kind": "order_ops",
+      "prompt": "Compute 11 + 2 * 14.",
+      "gold": 39,
+      "trap": 182,
+      "id": 85
+    },
+    {
+      "kind": "order_ops",
+      "prompt": "Compute 9 + 7 * 6.",
+      "gold": 51,
+      "trap": 96,
+      "id": 86
+    },
+    {
+      "kind": "order_ops",
+      "prompt": "Compute 14 + 3 * 20.",
+      "gold": 74,
+      "trap": 340,
+      "id": 87
+    },
+    {
+      "kind": "order_ops",
+      "prompt": "Compute 14 + 7 * 6.",
+      "gold": 56,
+      "trap": 126,
+      "id": 88
+    },
+    {
+      "kind": "order_ops",
+      "prompt": "Compute 4 + 8 * 3.",
+      "gold": 28,
+      "trap": 36,
+      "id": 89
+    },
+    {
+      "kind": "order_ops",
+      "prompt": "Compute 4 + 7 * 15.",
+      "gold": 109,
+      "trap": 165,
+      "id": 90
+    },
+    {
+      "kind": "order_ops",
+      "prompt": "Compute 9 + 13 * 17.",
+      "gold": 230,
+      "trap": 374,
+      "id": 91
+    },
+    {
+      "kind": "order_ops",
+      "prompt": "Compute 6 + 7 * 9.",
+      "gold": 69,
+      "trap": 117,
+      "id": 92
+    },
+    {
+      "kind": "order_ops",
+      "prompt": "Compute 4 + 10 * 14.",
+      "gold": 144,
+      "trap": 196,
+      "id": 93
+    },
+    {
+      "kind": "order_ops",
+      "prompt": "Compute 13 + 18 * 2.",
+      "gold": 49,
+      "trap": 62,
+      "id": 94
+    },
+    {
+      "kind": "order_ops",
+      "prompt": "Compute 8 + 20 * 20.",
+      "gold": 408,
+      "trap": 560,
+      "id": 95
+    },
+    {
+      "kind": "order_ops",
+      "prompt": "Compute 16 + 6 * 10.",
+      "gold": 76,
+      "trap": 220,
+      "id": 96
+    },
+    {
+      "kind": "order_ops",
+      "prompt": "Compute 16 + 9 * 19.",
+      "gold": 187,
+      "trap": 475,
+      "id": 97
+    },
+    {
+      "kind": "order_ops",
+      "prompt": "Compute 15 + 6 * 18.",
+      "gold": 123,
+      "trap": 378,
+      "id": 98
+    },
+    {
+      "kind": "order_ops",
+      "prompt": "Compute 20 + 18 * 18.",
+      "gold": 344,
+      "trap": 684,
+      "id": 99
+    },
+    {
+      "kind": "order_ops",
+      "prompt": "Compute 19 + 14 * 2.",
+      "gold": 47,
+      "trap": 66,
+      "id": 100
+    },
+    {
+      "kind": "order_ops",
+      "prompt": "Compute 6 + 6 * 6.",
+      "gold": 42,
+      "trap": 72,
+      "id": 101
+    },
+    {
+      "kind": "order_ops",
+      "prompt": "Compute 12 + 5 * 16.",
+      "gold": 92,
+      "trap": 272,
+      "id": 102
+    },
+    {
+      "kind": "order_ops",
+      "prompt": "Compute 18 + 4 * 9.",
+      "gold": 54,
+      "trap": 198,
+      "id": 103
+    },
+    {
+      "kind": "order_ops",
+      "prompt": "Compute 19 + 10 * 20.",
+      "gold": 219,
+      "trap": 580,
+      "id": 104
+    },
+    {
+      "kind": "order_ops",
+      "prompt": "Compute 9 + 10 * 17.",
+      "gold": 179,
+      "trap": 323,
+      "id": 105
+    },
+    {
+      "kind": "order_ops",
+      "prompt": "Compute 13 + 15 * 12.",
+      "gold": 193,
+      "trap": 336,
+      "id": 106
+    },
+    {
+      "kind": "order_ops",
+      "prompt": "Compute 19 + 5 * 12.",
+      "gold": 79,
+      "trap": 288,
+      "id": 107
+    },
+    {
+      "kind": "order_ops",
+      "prompt": "Compute 8 + 5 * 5.",
+      "gold": 33,
+      "trap": 65,
+      "id": 108
+    },
+    {
+      "kind": "order_ops",
+      "prompt": "Compute 20 + 2 * 19.",
+      "gold": 58,
+      "trap": 418,
+      "id": 109
+    },
+    {
+      "kind": "order_ops",
+      "prompt": "Compute 11 + 10 * 14.",
+      "gold": 151,
+      "trap": 294,
+      "id": 110
+    },
+    {
+      "kind": "order_ops",
+      "prompt": "Compute 8 + 15 * 15.",
+      "gold": 233,
+      "trap": 345,
+      "id": 111
+    },
+    {
+      "kind": "order_ops",
+      "prompt": "Compute 5 + 11 * 3.",
+      "gold": 38,
+      "trap": 48,
+      "id": 112
+    },
+    {
+      "kind": "order_ops",
+      "prompt": "Compute 10 + 9 * 2.",
+      "gold": 28,
+      "trap": 38,
+      "id": 113
+    },
+    {
+      "kind": "order_ops",
+      "prompt": "Compute 16 + 7 * 8.",
+      "gold": 72,
+      "trap": 184,
+      "id": 114
+    },
+    {
+      "kind": "order_ops",
+      "prompt": "Compute 9 + 8 * 17.",
+      "gold": 145,
+      "trap": 289,
+      "id": 115
+    },
+    {
+      "kind": "order_ops",
+      "prompt": "Compute 3 + 15 * 5.",
+      "gold": 78,
+      "trap": 90,
+      "id": 116
+    },
+    {
+      "kind": "order_ops",
+      "prompt": "Compute 9 + 17 * 3.",
+      "gold": 60,
+      "trap": 78,
+      "id": 117
+    },
+    {
+      "kind": "order_ops",
+      "prompt": "Compute 2 + 17 * 13.",
+      "gold": 223,
+      "trap": 247,
+      "id": 118
+    },
+    {
+      "kind": "order_ops",
+      "prompt": "Compute 16 + 17 * 20.",
+      "gold": 356,
+      "trap": 660,
+      "id": 119
+    },
+    {
+      "kind": "order_ops",
+      "prompt": "Compute 9 + 15 * 11.",
+      "gold": 174,
+      "trap": 264,
+      "id": 120
+    },
+    {
+      "kind": "order_ops",
+      "prompt": "Compute 6 + 11 * 9.",
+      "gold": 105,
+      "trap": 153,
+      "id": 121
+    },
+    {
+      "kind": "order_ops",
+      "prompt": "Compute 11 + 16 * 13.",
+      "gold": 219,
+      "trap": 351,
+      "id": 122
+    },
+    {
+      "kind": "order_ops",
+      "prompt": "Compute 6 + 15 * 12.",
+      "gold": 186,
+      "trap": 252,
+      "id": 123
+    },
+    {
+      "kind": "order_ops",
+      "prompt": "Compute 17 + 11 * 5.",
+      "gold": 72,
+      "trap": 140,
+      "id": 124
+    },
+    {
+      "kind": "near_round",
+      "prompt": "Compute 414 + 32.",
+      "gold": 446,
+      "trap": 450,
+      "id": 125
+    },
+    {
+      "kind": "near_round",
+      "prompt": "Compute 368 + 481.",
+      "gold": 849,
+      "trap": 850,
+      "id": 126
+    },
+    {
+      "kind": "near_round",
+      "prompt": "Compute 364 + 199.",
+      "gold": 563,
+      "trap": 560,
+      "id": 127
+    },
+    {
+      "kind": "near_round",
+      "prompt": "Compute 285 + 379.",
+      "gold": 664,
+      "trap": 660,
+      "id": 128
+    },
+    {
+      "kind": "near_round",
+      "prompt": "Compute 439 + 46.",
+      "gold": 485,
+      "trap": 480,
+      "id": 129
+    },
+    {
+      "kind": "near_round",
+      "prompt": "Compute 109 + 344.",
+      "gold": 453,
+      "trap": 450,
+      "id": 130
+    },
+    {
+      "kind": "near_round",
+      "prompt": "Compute 366 + 106.",
+      "gold": 472,
+      "trap": 470,
+      "id": 131
+    },
+    {
+      "kind": "near_round",
+      "prompt": "Compute 277 + 338.",
+      "gold": 615,
+      "trap": 620,
+      "id": 132
+    },
+    {
+      "kind": "near_round",
+      "prompt": "Compute 438 + 380.",
+      "gold": 818,
+      "trap": 820,
+      "id": 133
+    },
+    {
+      "kind": "near_round",
+      "prompt": "Compute 356 + 485.",
+      "gold": 841,
+      "trap": 840,
+      "id": 134
+    },
+    {
+      "kind": "near_round",
+      "prompt": "Compute 332 + 69.",
+      "gold": 401,
+      "trap": 400,
+      "id": 135
+    },
+    {
+      "kind": "near_round",
+      "prompt": "Compute 460 + 499.",
+      "gold": 959,
+      "trap": 960,
+      "id": 136
+    },
+    {
+      "kind": "near_round",
+      "prompt": "Compute 234 + 495.",
+      "gold": 729,
+      "trap": 730,
+      "id": 137
+    },
+    {
+      "kind": "near_round",
+      "prompt": "Compute 455 + 261.",
+      "gold": 716,
+      "trap": 720,
+      "id": 138
+    },
+    {
+      "kind": "near_round",
+      "prompt": "Compute 405 + 463.",
+      "gold": 868,
+      "trap": 870,
+      "id": 139
+    },
+    {
+      "kind": "near_round",
+      "prompt": "Compute 471 + 253.",
+      "gold": 724,
+      "trap": 720,
+      "id": 140
+    },
+    {
+      "kind": "near_round",
+      "prompt": "Compute 399 + 306.",
+      "gold": 705,
+      "trap": 700,
+      "id": 141
+    },
+    {
+      "kind": "near_round",
+      "prompt": "Compute 366 + 303.",
+      "gold": 669,
+      "trap": 670,
+      "id": 142
+    },
+    {
+      "kind": "near_round",
+      "prompt": "Compute 317 + 438.",
+      "gold": 755,
+      "trap": 760,
+      "id": 143
+    },
+    {
+      "kind": "near_round",
+      "prompt": "Compute 266 + 390.",
+      "gold": 656,
+      "trap": 660,
+      "id": 144
+    },
+    {
+      "kind": "near_round",
+      "prompt": "Compute 256 + 397.",
+      "gold": 653,
+      "trap": 650,
+      "id": 145
+    },
+    {
+      "kind": "near_round",
+      "prompt": "Compute 138 + 167.",
+      "gold": 305,
+      "trap": 300,
+      "id": 146
+    },
+    {
+      "kind": "near_round",
+      "prompt": "Compute 261 + 161.",
+      "gold": 422,
+      "trap": 420,
+      "id": 147
+    },
+    {
+      "kind": "near_round",
+      "prompt": "Compute 109 + 365.",
+      "gold": 474,
+      "trap": 470,
+      "id": 148
+    },
+    {
+      "kind": "near_round",
+      "prompt": "Compute 481 + 435.",
+      "gold": 916,
+      "trap": 920,
+      "id": 149
+    },
+    {
+      "kind": "near_round",
+      "prompt": "Compute 299 + 165.",
+      "gold": 464,
+      "trap": 460,
+      "id": 150
+    },
+    {
+      "kind": "near_round",
+      "prompt": "Compute 90 + 351.",
+      "gold": 441,
+      "trap": 440,
+      "id": 151
+    },
+    {
+      "kind": "near_round",
+      "prompt": "Compute 29 + 359.",
+      "gold": 388,
+      "trap": 390,
+      "id": 152
+    },
+    {
+      "kind": "near_round",
+      "prompt": "Compute 130 + 128.",
+      "gold": 258,
+      "trap": 260,
+      "id": 153
+    },
+    {
+      "kind": "near_round",
+      "prompt": "Compute 172 + 77.",
+      "gold": 249,
+      "trap": 250,
+      "id": 154
+    },
+    {
+      "kind": "near_round",
+      "prompt": "Compute 422 + 189.",
+      "gold": 611,
+      "trap": 610,
+      "id": 155
+    },
+    {
+      "kind": "near_round",
+      "prompt": "Compute 391 + 472.",
+      "gold": 863,
+      "trap": 860,
+      "id": 156
+    },
+    {
+      "kind": "near_round",
+      "prompt": "Compute 479 + 76.",
+      "gold": 555,
+      "trap": 560,
+      "id": 157
+    },
+    {
+      "kind": "near_round",
+      "prompt": "Compute 157 + 296.",
+      "gold": 453,
+      "trap": 450,
+      "id": 158
+    },
+    {
+      "kind": "near_round",
+      "prompt": "Compute 211 + 11.",
+      "gold": 222,
+      "trap": 220,
+      "id": 159
+    },
+    {
+      "kind": "near_round",
+      "prompt": "Compute 453 + 312.",
+      "gold": 765,
+      "trap": 760,
+      "id": 160
+    },
+    {
+      "kind": "near_round",
+      "prompt": "Compute 362 + 262.",
+      "gold": 624,
+      "trap": 620,
+      "id": 161
+    },
+    {
+      "kind": "near_round",
+      "prompt": "Compute 135 + 199.",
+      "gold": 334,
+      "trap": 330,
+      "id": 162
+    },
+    {
+      "kind": "near_round",
+      "prompt": "Compute 201 + 491.",
+      "gold": 692,
+      "trap": 690,
+      "id": 163
+    },
+    {
+      "kind": "near_round",
+      "prompt": "Compute 47 + 446.",
+      "gold": 493,
+      "trap": 490,
+      "id": 164
+    },
+    {
+      "kind": "near_round",
+      "prompt": "Compute 227 + 21.",
+      "gold": 248,
+      "trap": 250,
+      "id": 165
+    },
+    {
+      "kind": "near_round",
+      "prompt": "Compute 247 + 31.",
+      "gold": 278,
+      "trap": 280,
+      "id": 166
+    },
+    {
+      "kind": "near_round",
+      "prompt": "Compute 460 + 225.",
+      "gold": 685,
+      "trap": 680,
+      "id": 167
+    },
+    {
+      "kind": "near_round",
+      "prompt": "Compute 55 + 481.",
+      "gold": 536,
+      "trap": 540,
+      "id": 168
+    },
+    {
+      "kind": "near_round",
+      "prompt": "Compute 81 + 362.",
+      "gold": 443,
+      "trap": 440,
+      "id": 169
+    },
+    {
+      "kind": "near_round",
+      "prompt": "Compute 272 + 459.",
+      "gold": 731,
+      "trap": 730,
+      "id": 170
+    },
+    {
+      "kind": "near_round",
+      "prompt": "Compute 166 + 491.",
+      "gold": 657,
+      "trap": 660,
+      "id": 171
+    },
+    {
+      "kind": "near_round",
+      "prompt": "Compute 176 + 75.",
+      "gold": 251,
+      "trap": 250,
+      "id": 172
+    },
+    {
+      "kind": "near_round",
+      "prompt": "Compute 19 + 50.",
+      "gold": 69,
+      "trap": 70,
+      "id": 173
+    },
+    {
+      "kind": "near_round",
+      "prompt": "Compute 277 + 416.",
+      "gold": 693,
+      "trap": 690,
+      "id": 174
+    },
+    {
+      "kind": "near_round",
+      "prompt": "Compute 323 + 33.",
+      "gold": 356,
+      "trap": 360,
+      "id": 175
+    },
+    {
+      "kind": "near_round",
+      "prompt": "Compute 149 + 435.",
+      "gold": 584,
+      "trap": 580,
+      "id": 176
+    },
+    {
+      "kind": "near_round",
+      "prompt": "Compute 386 + 421.",
+      "gold": 807,
+      "trap": 810,
+      "id": 177
+    },
+    {
+      "kind": "near_round",
+      "prompt": "Compute 440 + 55.",
+      "gold": 495,
+      "trap": 500,
+      "id": 178
+    },
+    {
+      "kind": "near_round",
+      "prompt": "Compute 59 + 130.",
+      "gold": 189,
+      "trap": 190,
+      "id": 179
+    },
+    {
+      "kind": "near_round",
+      "prompt": "Compute 109 + 248.",
+      "gold": 357,
+      "trap": 360,
+      "id": 180
+    },
+    {
+      "kind": "near_round",
+      "prompt": "Compute 396 + 393.",
+      "gold": 789,
+      "trap": 790,
+      "id": 181
+    },
+    {
+      "kind": "near_round",
+      "prompt": "Compute 286 + 127.",
+      "gold": 413,
+      "trap": 410,
+      "id": 182
+    },
+    {
+      "kind": "near_round",
+      "prompt": "Compute 363 + 234.",
+      "gold": 597,
+      "trap": 600,
+      "id": 183
+    },
+    {
+      "kind": "near_round",
+      "prompt": "Compute 462 + 499.",
+      "gold": 961,
+      "trap": 960,
+      "id": 184
+    },
+    {
+      "kind": "near_round",
+      "prompt": "Compute 271 + 250.",
+      "gold": 521,
+      "trap": 520,
+      "id": 185
+    },
+    {
+      "kind": "near_round",
+      "prompt": "Compute 356 + 357.",
+      "gold": 713,
+      "trap": 710,
+      "id": 186
+    },
+    {
+      "kind": "near_round",
+      "prompt": "Compute 378 + 240.",
+      "gold": 618,
+      "trap": 620,
+      "id": 187
+    },
+    {
+      "kind": "near_round",
+      "prompt": "Compute 380 + 151.",
+      "gold": 531,
+      "trap": 530,
+      "id": 188
+    },
+    {
+      "kind": "near_round",
+      "prompt": "Compute 291 + 122.",
+      "gold": 413,
+      "trap": 410,
+      "id": 189
+    },
+    {
+      "kind": "near_round",
+      "prompt": "Compute 21 + 434.",
+      "gold": 455,
+      "trap": 460,
+      "id": 190
+    },
+    {
+      "kind": "near_round",
+      "prompt": "Compute 461 + 275.",
+      "gold": 736,
+      "trap": 740,
+      "id": 191
+    },
+    {
+      "kind": "near_round",
+      "prompt": "Compute 18 + 75.",
+      "gold": 93,
+      "trap": 90,
+      "id": 192
+    },
+    {
+      "kind": "near_round",
+      "prompt": "Compute 117 + 346.",
+      "gold": 463,
+      "trap": 460,
+      "id": 193
+    },
+    {
+      "kind": "near_round",
+      "prompt": "Compute 295 + 402.",
+      "gold": 697,
+      "trap": 700,
+      "id": 194
+    },
+    {
+      "kind": "near_round",
+      "prompt": "Compute 85 + 470.",
+      "gold": 555,
+      "trap": 560,
+      "id": 195
+    },
+    {
+      "kind": "near_round",
+      "prompt": "Compute 81 + 178.",
+      "gold": 259,
+      "trap": 260,
+      "id": 196
+    },
+    {
+      "kind": "near_round",
+      "prompt": "Compute 122 + 217.",
+      "gold": 339,
+      "trap": 340,
+      "id": 197
+    },
+    {
+      "kind": "near_round",
+      "prompt": "Compute 88 + 269.",
+      "gold": 357,
+      "trap": 360,
+      "id": 198
+    },
+    {
+      "kind": "near_round",
+      "prompt": "Compute 160 + 83.",
+      "gold": 243,
+      "trap": 240,
+      "id": 199
+    },
+    {
+      "kind": "near_round",
+      "prompt": "Compute 473 + 290.",
+      "gold": 763,
+      "trap": 760,
+      "id": 200
+    },
+    {
+      "kind": "near_round",
+      "prompt": "Compute 249 + 184.",
+      "gold": 433,
+      "trap": 430,
+      "id": 201
+    },
+    {
+      "kind": "near_round",
+      "prompt": "Compute 254 + 238.",
+      "gold": 492,
+      "trap": 490,
+      "id": 202
+    },
+    {
+      "kind": "near_round",
+      "prompt": "Compute 367 + 301.",
+      "gold": 668,
+      "trap": 670,
+      "id": 203
+    },
+    {
+      "kind": "near_round",
+      "prompt": "Compute 171 + 454.",
+      "gold": 625,
+      "trap": 620,
+      "id": 204
+    },
+    {
+      "kind": "near_round",
+      "prompt": "Compute 124 + 135.",
+      "gold": 259,
+      "trap": 260,
+      "id": 205
+    },
+    {
+      "kind": "near_round",
+      "prompt": "Compute 230 + 316.",
+      "gold": 546,
+      "trap": 550,
+      "id": 206
+    },
+    {
+      "kind": "near_round",
+      "prompt": "Compute 387 + 27.",
+      "gold": 414,
+      "trap": 410,
+      "id": 207
+    },
+    {
+      "kind": "near_round",
+      "prompt": "Compute 108 + 404.",
+      "gold": 512,
+      "trap": 510,
+      "id": 208
+    },
+    {
+      "kind": "near_round",
+      "prompt": "Compute 456 + 343.",
+      "gold": 799,
+      "trap": 800,
+      "id": 209
+    },
+    {
+      "kind": "near_round",
+      "prompt": "Compute 291 + 331.",
+      "gold": 622,
+      "trap": 620,
+      "id": 210
+    },
+    {
+      "kind": "near_round",
+      "prompt": "Compute 177 + 279.",
+      "gold": 456,
+      "trap": 460,
+      "id": 211
+    },
+    {
+      "kind": "near_round",
+      "prompt": "Compute 109 + 489.",
+      "gold": 598,
+      "trap": 600,
+      "id": 212
+    },
+    {
+      "kind": "near_round",
+      "prompt": "Compute 203 + 198.",
+      "gold": 401,
+      "trap": 400,
+      "id": 213
+    },
+    {
+      "kind": "near_round",
+      "prompt": "Compute 447 + 329.",
+      "gold": 776,
+      "trap": 780,
+      "id": 214
+    },
+    {
+      "kind": "near_round",
+      "prompt": "Compute 416 + 468.",
+      "gold": 884,
+      "trap": 880,
+      "id": 215
+    },
+    {
+      "kind": "near_round",
+      "prompt": "Compute 375 + 290.",
+      "gold": 665,
+      "trap": 660,
+      "id": 216
+    },
+    {
+      "kind": "near_round",
+      "prompt": "Compute 191 + 121.",
+      "gold": 312,
+      "trap": 310,
+      "id": 217
+    },
+    {
+      "kind": "near_round",
+      "prompt": "Compute 308 + 38.",
+      "gold": 346,
+      "trap": 350,
+      "id": 218
+    },
+    {
+      "kind": "near_round",
+      "prompt": "Compute 78 + 219.",
+      "gold": 297,
+      "trap": 300,
+      "id": 219
+    },
+    {
+      "kind": "near_round",
+      "prompt": "Compute 28 + 277.",
+      "gold": 305,
+      "trap": 300,
+      "id": 220
+    },
+    {
+      "kind": "near_round",
+      "prompt": "Compute 357 + 427.",
+      "gold": 784,
+      "trap": 780,
+      "id": 221
+    },
+    {
+      "kind": "near_round",
+      "prompt": "Compute 222 + 176.",
+      "gold": 398,
+      "trap": 400,
+      "id": 222
+    },
+    {
+      "kind": "near_round",
+      "prompt": "Compute 480 + 248.",
+      "gold": 728,
+      "trap": 730,
+      "id": 223
+    },
+    {
+      "kind": "near_round",
+      "prompt": "Compute 247 + 235.",
+      "gold": 482,
+      "trap": 480,
+      "id": 224
+    },
+    {
+      "kind": "near_round",
+      "prompt": "Compute 13 + 98.",
+      "gold": 111,
+      "trap": 110,
+      "id": 225
+    },
+    {
+      "kind": "near_round",
+      "prompt": "Compute 89 + 136.",
+      "gold": 225,
+      "trap": 220,
+      "id": 226
+    },
+    {
+      "kind": "near_round",
+      "prompt": "Compute 192 + 351.",
+      "gold": 543,
+      "trap": 540,
+      "id": 227
+    },
+    {
+      "kind": "near_round",
+      "prompt": "Compute 497 + 19.",
+      "gold": 516,
+      "trap": 520,
+      "id": 228
+    },
+    {
+      "kind": "near_round",
+      "prompt": "Compute 350 + 93.",
+      "gold": 443,
+      "trap": 440,
+      "id": 229
+    },
+    {
+      "kind": "near_round",
+      "prompt": "Compute 42 + 120.",
+      "gold": 162,
+      "trap": 160,
+      "id": 230
+    },
+    {
+      "kind": "near_round",
+      "prompt": "Compute 182 + 282.",
+      "gold": 464,
+      "trap": 460,
+      "id": 231
+    },
+    {
+      "kind": "near_round",
+      "prompt": "Compute 373 + 112.",
+      "gold": 485,
+      "trap": 480,
+      "id": 232
+    },
+    {
+      "kind": "near_round",
+      "prompt": "Compute 126 + 159.",
+      "gold": 285,
+      "trap": 280,
+      "id": 233
+    },
+    {
+      "kind": "near_round",
+      "prompt": "Compute 422 + 111.",
+      "gold": 533,
+      "trap": 530,
+      "id": 234
+    },
+    {
+      "kind": "near_round",
+      "prompt": "Compute 495 + 414.",
+      "gold": 909,
+      "trap": 910,
+      "id": 235
+    },
+    {
+      "kind": "near_round",
+      "prompt": "Compute 453 + 190.",
+      "gold": 643,
+      "trap": 640,
+      "id": 236
+    },
+    {
+      "kind": "near_round",
+      "prompt": "Compute 123 + 104.",
+      "gold": 227,
+      "trap": 230,
+      "id": 237
+    },
+    {
+      "kind": "near_round",
+      "prompt": "Compute 432 + 90.",
+      "gold": 522,
+      "trap": 520,
+      "id": 238
+    },
+    {
+      "kind": "near_round",
+      "prompt": "Compute 264 + 417.",
+      "gold": 681,
+      "trap": 680,
+      "id": 239
+    },
+    {
+      "kind": "near_round",
+      "prompt": "Compute 110 + 57.",
+      "gold": 167,
+      "trap": 170,
+      "id": 240
+    },
+    {
+      "kind": "near_round",
+      "prompt": "Compute 311 + 318.",
+      "gold": 629,
+      "trap": 630,
+      "id": 241
+    },
+    {
+      "kind": "near_round",
+      "prompt": "Compute 448 + 458.",
+      "gold": 906,
+      "trap": 910,
+      "id": 242
+    },
+    {
+      "kind": "near_round",
+      "prompt": "Compute 327 + 340.",
+      "gold": 667,
+      "trap": 670,
+      "id": 243
+    },
+    {
+      "kind": "near_round",
+      "prompt": "Compute 421 + 352.",
+      "gold": 773,
+      "trap": 770,
+      "id": 244
+    },
+    {
+      "kind": "near_round",
+      "prompt": "Compute 162 + 141.",
+      "gold": 303,
+      "trap": 300,
+      "id": 245
+    },
+    {
+      "kind": "near_round",
+      "prompt": "Compute 119 + 215.",
+      "gold": 334,
+      "trap": 330,
+      "id": 246
+    },
+    {
+      "kind": "near_round",
+      "prompt": "Compute 312 + 251.",
+      "gold": 563,
+      "trap": 560,
+      "id": 247
+    },
+    {
+      "kind": "near_round",
+      "prompt": "Compute 337 + 489.",
+      "gold": 826,
+      "trap": 830,
+      "id": 248
+    },
+    {
+      "kind": "near_round",
+      "prompt": "Compute 41 + 150.",
+      "gold": 191,
+      "trap": 190,
+      "id": 249
+    },
+    {
+      "kind": "parity_trap",
+      "prompt": "Is 561 even or odd? Answer 0 for even, 1 for odd.",
+      "gold": 1,
+      "trap": 0,
+      "id": 250
+    },
+    {
+      "kind": "parity_trap",
+      "prompt": "Is 437 even or odd? Answer 0 for even, 1 for odd.",
+      "gold": 1,
+      "trap": 0,
+      "id": 251
+    },
+    {
+      "kind": "parity_trap",
+      "prompt": "Is 467 even or odd? Answer 0 for even, 1 for odd.",
+      "gold": 1,
+      "trap": 0,
+      "id": 252
+    },
+    {
+      "kind": "parity_trap",
+      "prompt": "Is 485 even or odd? Answer 0 for even, 1 for odd.",
+      "gold": 1,
+      "trap": 0,
+      "id": 253
+    },
+    {
+      "kind": "parity_trap",
+      "prompt": "Is 295 even or odd? Answer 0 for even, 1 for odd.",
+      "gold": 1,
+      "trap": 0,
+      "id": 254
+    },
+    {
+      "kind": "parity_trap",
+      "prompt": "Is 967 even or odd? Answer 0 for even, 1 for odd.",
+      "gold": 1,
+      "trap": 0,
+      "id": 255
+    },
+    {
+      "kind": "parity_trap",
+      "prompt": "Is 965 even or odd? Answer 0 for even, 1 for odd.",
+      "gold": 1,
+      "trap": 0,
+      "id": 256
+    },
+    {
+      "kind": "parity_trap",
+      "prompt": "Is 301 even or odd? Answer 0 for even, 1 for odd.",
+      "gold": 1,
+      "trap": 0,
+      "id": 257
+    },
+    {
+      "kind": "parity_trap",
+      "prompt": "Is 369 even or odd? Answer 0 for even, 1 for odd.",
+      "gold": 1,
+      "trap": 0,
+      "id": 258
+    },
+    {
+      "kind": "parity_trap",
+      "prompt": "Is 15 even or odd? Answer 0 for even, 1 for odd.",
+      "gold": 1,
+      "trap": 0,
+      "id": 259
+    },
+    {
+      "kind": "parity_trap",
+      "prompt": "Is 355 even or odd? Answer 0 for even, 1 for odd.",
+      "gold": 1,
+      "trap": 0,
+      "id": 260
+    },
+    {
+      "kind": "parity_trap",
+      "prompt": "Is 31 even or odd? Answer 0 for even, 1 for odd.",
+      "gold": 1,
+      "trap": 0,
+      "id": 261
+    },
+    {
+      "kind": "parity_trap",
+      "prompt": "Is 365 even or odd? Answer 0 for even, 1 for odd.",
+      "gold": 1,
+      "trap": 0,
+      "id": 262
+    },
+    {
+      "kind": "parity_trap",
+      "prompt": "Is 381 even or odd? Answer 0 for even, 1 for odd.",
+      "gold": 1,
+      "trap": 0,
+      "id": 263
+    },
+    {
+      "kind": "parity_trap",
+      "prompt": "Is 711 even or odd? Answer 0 for even, 1 for odd.",
+      "gold": 1,
+      "trap": 0,
+      "id": 264
+    },
+    {
+      "kind": "parity_trap",
+      "prompt": "Is 351 even or odd? Answer 0 for even, 1 for odd.",
+      "gold": 1,
+      "trap": 0,
+      "id": 265
+    },
+    {
+      "kind": "parity_trap",
+      "prompt": "Is 649 even or odd? Answer 0 for even, 1 for odd.",
+      "gold": 1,
+      "trap": 0,
+      "id": 266
+    },
+    {
+      "kind": "parity_trap",
+      "prompt": "Is 387 even or odd? Answer 0 for even, 1 for odd.",
+      "gold": 1,
+      "trap": 0,
+      "id": 267
+    },
+    {
+      "kind": "parity_trap",
+      "prompt": "Is 321 even or odd? Answer 0 for even, 1 for odd.",
+      "gold": 1,
+      "trap": 0,
+      "id": 268
+    },
+    {
+      "kind": "parity_trap",
+      "prompt": "Is 733 even or odd? Answer 0 for even, 1 for odd.",
+      "gold": 1,
+      "trap": 0,
+      "id": 269
+    },
+    {
+      "kind": "parity_trap",
+      "prompt": "Is 271 even or odd? Answer 0 for even, 1 for odd.",
+      "gold": 1,
+      "trap": 0,
+      "id": 270
+    },
+    {
+      "kind": "parity_trap",
+      "prompt": "Is 453 even or odd? Answer 0 for even, 1 for odd.",
+      "gold": 1,
+      "trap": 0,
+      "id": 271
+    },
+    {
+      "kind": "parity_trap",
+      "prompt": "Is 575 even or odd? Answer 0 for even, 1 for odd.",
+      "gold": 1,
+      "trap": 0,
+      "id": 272
+    },
+    {
+      "kind": "parity_trap",
+      "prompt": "Is 51 even or odd? Answer 0 for even, 1 for odd.",
+      "gold": 1,
+      "trap": 0,
+      "id": 273
+    },
+    {
+      "kind": "parity_trap",
+      "prompt": "Is 249 even or odd? Answer 0 for even, 1 for odd.",
+      "gold": 1,
+      "trap": 0,
+      "id": 274
+    },
+    {
+      "kind": "parity_trap",
+      "prompt": "Is 863 even or odd? Answer 0 for even, 1 for odd.",
+      "gold": 1,
+      "trap": 0,
+      "id": 275
+    },
+    {
+      "kind": "parity_trap",
+      "prompt": "Is 969 even or odd? Answer 0 for even, 1 for odd.",
+      "gold": 1,
+      "trap": 0,
+      "id": 276
+    },
+    {
+      "kind": "parity_trap",
+      "prompt": "Is 397 even or odd? Answer 0 for even, 1 for odd.",
+      "gold": 1,
+      "trap": 0,
+      "id": 277
+    },
+    {
+      "kind": "parity_trap",
+      "prompt": "Is 451 even or odd? Answer 0 for even, 1 for odd.",
+      "gold": 1,
+      "trap": 0,
+      "id": 278
+    },
+    {
+      "kind": "parity_trap",
+      "prompt": "Is 337 even or odd? Answer 0 for even, 1 for odd.",
+      "gold": 1,
+      "trap": 0,
+      "id": 279
+    },
+    {
+      "kind": "parity_trap",
+      "prompt": "Is 563 even or odd? Answer 0 for even, 1 for odd.",
+      "gold": 1,
+      "trap": 0,
+      "id": 280
+    },
+    {
+      "kind": "parity_trap",
+      "prompt": "Is 849 even or odd? Answer 0 for even, 1 for odd.",
+      "gold": 1,
+      "trap": 0,
+      "id": 281
+    },
+    {
+      "kind": "parity_trap",
+      "prompt": "Is 223 even or odd? Answer 0 for even, 1 for odd.",
+      "gold": 1,
+      "trap": 0,
+      "id": 282
+    },
+    {
+      "kind": "parity_trap",
+      "prompt": "Is 127 even or odd? Answer 0 for even, 1 for odd.",
+      "gold": 1,
+      "trap": 0,
+      "id": 283
+    },
+    {
+      "kind": "parity_trap",
+      "prompt": "Is 235 even or odd? Answer 0 for even, 1 for odd.",
+      "gold": 1,
+      "trap": 0,
+      "id": 284
+    },
+    {
+      "kind": "parity_trap",
+      "prompt": "Is 837 even or odd? Answer 0 for even, 1 for odd.",
+      "gold": 1,
+      "trap": 0,
+      "id": 285
+    },
+    {
+      "kind": "parity_trap",
+      "prompt": "Is 661 even or odd? Answer 0 for even, 1 for odd.",
+      "gold": 1,
+      "trap": 0,
+      "id": 286
+    },
+    {
+      "kind": "parity_trap",
+      "prompt": "Is 577 even or odd? Answer 0 for even, 1 for odd.",
+      "gold": 1,
+      "trap": 0,
+      "id": 287
+    },
+    {
+      "kind": "parity_trap",
+      "prompt": "Is 405 even or odd? Answer 0 for even, 1 for odd.",
+      "gold": 1,
+      "trap": 0,
+      "id": 288
+    },
+    {
+      "kind": "parity_trap",
+      "prompt": "Is 407 even or odd? Answer 0 for even, 1 for odd.",
+      "gold": 1,
+      "trap": 0,
+      "id": 289
+    },
+    {
+      "kind": "parity_trap",
+      "prompt": "Is 371 even or odd? Answer 0 for even, 1 for odd.",
+      "gold": 1,
+      "trap": 0,
+      "id": 290
+    },
+    {
+      "kind": "parity_trap",
+      "prompt": "Is 795 even or odd? Answer 0 for even, 1 for odd.",
+      "gold": 1,
+      "trap": 0,
+      "id": 291
+    },
+    {
+      "kind": "parity_trap",
+      "prompt": "Is 291 even or odd? Answer 0 for even, 1 for odd.",
+      "gold": 1,
+      "trap": 0,
+      "id": 292
+    },
+    {
+      "kind": "parity_trap",
+      "prompt": "Is 39 even or odd? Answer 0 for even, 1 for odd.",
+      "gold": 1,
+      "trap": 0,
+      "id": 293
+    },
+    {
+      "kind": "parity_trap",
+      "prompt": "Is 605 even or odd? Answer 0 for even, 1 for odd.",
+      "gold": 1,
+      "trap": 0,
+      "id": 294
+    },
+    {
+      "kind": "parity_trap",
+      "prompt": "Is 341 even or odd? Answer 0 for even, 1 for odd.",
+      "gold": 1,
+      "trap": 0,
+      "id": 295
+    },
+    {
+      "kind": "parity_trap",
+      "prompt": "Is 335 even or odd? Answer 0 for even, 1 for odd.",
+      "gold": 1,
+      "trap": 0,
+      "id": 296
+    },
+    {
+      "kind": "parity_trap",
+      "prompt": "Is 293 even or odd? Answer 0 for even, 1 for odd.",
+      "gold": 1,
+      "trap": 0,
+      "id": 297
+    },
+    {
+      "kind": "parity_trap",
+      "prompt": "Is 345 even or odd? Answer 0 for even, 1 for odd.",
+      "gold": 1,
+      "trap": 0,
+      "id": 298
+    },
+    {
+      "kind": "parity_trap",
+      "prompt": "Is 377 even or odd? Answer 0 for even, 1 for odd.",
+      "gold": 1,
+      "trap": 0,
+      "id": 299
+    },
+    {
+      "kind": "parity_trap",
+      "prompt": "Is 995 even or odd? Answer 0 for even, 1 for odd.",
+      "gold": 1,
+      "trap": 0,
+      "id": 300
+    },
+    {
+      "kind": "parity_trap",
+      "prompt": "Is 611 even or odd? Answer 0 for even, 1 for odd.",
+      "gold": 1,
+      "trap": 0,
+      "id": 301
+    },
+    {
+      "kind": "parity_trap",
+      "prompt": "Is 557 even or odd? Answer 0 for even, 1 for odd.",
+      "gold": 1,
+      "trap": 0,
+      "id": 302
+    },
+    {
+      "kind": "parity_trap",
+      "prompt": "Is 961 even or odd? Answer 0 for even, 1 for odd.",
+      "gold": 1,
+      "trap": 0,
+      "id": 303
+    },
+    {
+      "kind": "parity_trap",
+      "prompt": "Is 93 even or odd? Answer 0 for even, 1 for odd.",
+      "gold": 1,
+      "trap": 0,
+      "id": 304
+    },
+    {
+      "kind": "parity_trap",
+      "prompt": "Is 261 even or odd? Answer 0 for even, 1 for odd.",
+      "gold": 1,
+      "trap": 0,
+      "id": 305
+    },
+    {
+      "kind": "parity_trap",
+      "prompt": "Is 651 even or odd? Answer 0 for even, 1 for odd.",
+      "gold": 1,
+      "trap": 0,
+      "id": 306
+    },
+    {
+      "kind": "parity_trap",
+      "prompt": "Is 277 even or odd? Answer 0 for even, 1 for odd.",
+      "gold": 1,
+      "trap": 0,
+      "id": 307
+    },
+    {
+      "kind": "parity_trap",
+      "prompt": "Is 317 even or odd? Answer 0 for even, 1 for odd.",
+      "gold": 1,
+      "trap": 0,
+      "id": 308
+    },
+    {
+      "kind": "parity_trap",
+      "prompt": "Is 207 even or odd? Answer 0 for even, 1 for odd.",
+      "gold": 1,
+      "trap": 0,
+      "id": 309
+    },
+    {
+      "kind": "parity_trap",
+      "prompt": "Is 479 even or odd? Answer 0 for even, 1 for odd.",
+      "gold": 1,
+      "trap": 0,
+      "id": 310
+    },
+    {
+      "kind": "parity_trap",
+      "prompt": "Is 989 even or odd? Answer 0 for even, 1 for odd.",
+      "gold": 1,
+      "trap": 0,
+      "id": 311
+    },
+    {
+      "kind": "parity_trap",
+      "prompt": "Is 897 even or odd? Answer 0 for even, 1 for odd.",
+      "gold": 1,
+      "trap": 0,
+      "id": 312
+    },
+    {
+      "kind": "parity_trap",
+      "prompt": "Is 829 even or odd? Answer 0 for even, 1 for odd.",
+      "gold": 1,
+      "trap": 0,
+      "id": 313
+    },
+    {
+      "kind": "parity_trap",
+      "prompt": "Is 413 even or odd? Answer 0 for even, 1 for odd.",
+      "gold": 1,
+      "trap": 0,
+      "id": 314
+    },
+    {
+      "kind": "parity_trap",
+      "prompt": "Is 801 even or odd? Answer 0 for even, 1 for odd.",
+      "gold": 1,
+      "trap": 0,
+      "id": 315
+    },
+    {
+      "kind": "parity_trap",
+      "prompt": "Is 541 even or odd? Answer 0 for even, 1 for odd.",
+      "gold": 1,
+      "trap": 0,
+      "id": 316
+    },
+    {
+      "kind": "parity_trap",
+      "prompt": "Is 299 even or odd? Answer 0 for even, 1 for odd.",
+      "gold": 1,
+      "trap": 0,
+      "id": 317
+    },
+    {
+      "kind": "parity_trap",
+      "prompt": "Is 329 even or odd? Answer 0 for even, 1 for odd.",
+      "gold": 1,
+      "trap": 0,
+      "id": 318
+    },
+    {
+      "kind": "parity_trap",
+      "prompt": "Is 853 even or odd? Answer 0 for even, 1 for odd.",
+      "gold": 1,
+      "trap": 0,
+      "id": 319
+    },
+    {
+      "kind": "parity_trap",
+      "prompt": "Is 759 even or odd? Answer 0 for even, 1 for odd.",
+      "gold": 1,
+      "trap": 0,
+      "id": 320
+    },
+    {
+      "kind": "parity_trap",
+      "prompt": "Is 481 even or odd? Answer 0 for even, 1 for odd.",
+      "gold": 1,
+      "trap": 0,
+      "id": 321
+    },
+    {
+      "kind": "parity_trap",
+      "prompt": "Is 421 even or odd? Answer 0 for even, 1 for odd.",
+      "gold": 1,
+      "trap": 0,
+      "id": 322
+    },
+    {
+      "kind": "parity_trap",
+      "prompt": "Is 737 even or odd? Answer 0 for even, 1 for odd.",
+      "gold": 1,
+      "trap": 0,
+      "id": 323
+    },
+    {
+      "kind": "parity_trap",
+      "prompt": "Is 933 even or odd? Answer 0 for even, 1 for odd.",
+      "gold": 1,
+      "trap": 0,
+      "id": 324
+    },
+    {
+      "kind": "parity_trap",
+      "prompt": "Is 149 even or odd? Answer 0 for even, 1 for odd.",
+      "gold": 1,
+      "trap": 0,
+      "id": 325
+    },
+    {
+      "kind": "parity_trap",
+      "prompt": "Is 859 even or odd? Answer 0 for even, 1 for odd.",
+      "gold": 1,
+      "trap": 0,
+      "id": 326
+    },
+    {
+      "kind": "parity_trap",
+      "prompt": "Is 43 even or odd? Answer 0 for even, 1 for odd.",
+      "gold": 1,
+      "trap": 0,
+      "id": 327
+    },
+    {
+      "kind": "parity_trap",
+      "prompt": "Is 315 even or odd? Answer 0 for even, 1 for odd.",
+      "gold": 1,
+      "trap": 0,
+      "id": 328
+    },
+    {
+      "kind": "parity_trap",
+      "prompt": "Is 641 even or odd? Answer 0 for even, 1 for odd.",
+      "gold": 1,
+      "trap": 0,
+      "id": 329
+    },
+    {
+      "kind": "parity_trap",
+      "prompt": "Is 389 even or odd? Answer 0 for even, 1 for odd.",
+      "gold": 1,
+      "trap": 0,
+      "id": 330
+    },
+    {
+      "kind": "parity_trap",
+      "prompt": "Is 623 even or odd? Answer 0 for even, 1 for odd.",
+      "gold": 1,
+      "trap": 0,
+      "id": 331
+    },
+    {
+      "kind": "parity_trap",
+      "prompt": "Is 723 even or odd? Answer 0 for even, 1 for odd.",
+      "gold": 1,
+      "trap": 0,
+      "id": 332
+    },
+    {
+      "kind": "parity_trap",
+      "prompt": "Is 441 even or odd? Answer 0 for even, 1 for odd.",
+      "gold": 1,
+      "trap": 0,
+      "id": 333
+    },
+    {
+      "kind": "parity_trap",
+      "prompt": "Is 471 even or odd? Answer 0 for even, 1 for odd.",
+      "gold": 1,
+      "trap": 0,
+      "id": 334
+    },
+    {
+      "kind": "parity_trap",
+      "prompt": "Is 59 even or odd? Answer 0 for even, 1 for odd.",
+      "gold": 1,
+      "trap": 0,
+      "id": 335
+    },
+    {
+      "kind": "parity_trap",
+      "prompt": "Is 767 even or odd? Answer 0 for even, 1 for odd.",
+      "gold": 1,
+      "trap": 0,
+      "id": 336
+    },
+    {
+      "kind": "parity_trap",
+      "prompt": "Is 117 even or odd? Answer 0 for even, 1 for odd.",
+      "gold": 1,
+      "trap": 0,
+      "id": 337
+    },
+    {
+      "kind": "parity_trap",
+      "prompt": "Is 427 even or odd? Answer 0 for even, 1 for odd.",
+      "gold": 1,
+      "trap": 0,
+      "id": 338
+    },
+    {
+      "kind": "parity_trap",
+      "prompt": "Is 251 even or odd? Answer 0 for even, 1 for odd.",
+      "gold": 1,
+      "trap": 0,
+      "id": 339
+    },
+    {
+      "kind": "parity_trap",
+      "prompt": "Is 941 even or odd? Answer 0 for even, 1 for odd.",
+      "gold": 1,
+      "trap": 0,
+      "id": 340
+    },
+    {
+      "kind": "parity_trap",
+      "prompt": "Is 13 even or odd? Answer 0 for even, 1 for odd.",
+      "gold": 1,
+      "trap": 0,
+      "id": 341
+    },
+    {
+      "kind": "parity_trap",
+      "prompt": "Is 61 even or odd? Answer 0 for even, 1 for odd.",
+      "gold": 1,
+      "trap": 0,
+      "id": 342
+    },
+    {
+      "kind": "parity_trap",
+      "prompt": "Is 639 even or odd? Answer 0 for even, 1 for odd.",
+      "gold": 1,
+      "trap": 0,
+      "id": 343
+    },
+    {
+      "kind": "parity_trap",
+      "prompt": "Is 163 even or odd? Answer 0 for even, 1 for odd.",
+      "gold": 1,
+      "trap": 0,
+      "id": 344
+    },
+    {
+      "kind": "parity_trap",
+      "prompt": "Is 19 even or odd? Answer 0 for even, 1 for odd.",
+      "gold": 1,
+      "trap": 0,
+      "id": 345
+    },
+    {
+      "kind": "parity_trap",
+      "prompt": "Is 179 even or odd? Answer 0 for even, 1 for odd.",
+      "gold": 1,
+      "trap": 0,
+      "id": 346
+    },
+    {
+      "kind": "parity_trap",
+      "prompt": "Is 567 even or odd? Answer 0 for even, 1 for odd.",
+      "gold": 1,
+      "trap": 0,
+      "id": 347
+    },
+    {
+      "kind": "parity_trap",
+      "prompt": "Is 21 even or odd? Answer 0 for even, 1 for odd.",
+      "gold": 1,
+      "trap": 0,
+      "id": 348
+    },
+    {
+      "kind": "parity_trap",
+      "prompt": "Is 49 even or odd? Answer 0 for even, 1 for odd.",
+      "gold": 1,
+      "trap": 0,
+      "id": 349
+    },
+    {
+      "kind": "parity_trap",
+      "prompt": "Is 185 even or odd? Answer 0 for even, 1 for odd.",
+      "gold": 1,
+      "trap": 0,
+      "id": 350
+    },
+    {
+      "kind": "parity_trap",
+      "prompt": "Is 109 even or odd? Answer 0 for even, 1 for odd.",
+      "gold": 1,
+      "trap": 0,
+      "id": 351
+    },
+    {
+      "kind": "parity_trap",
+      "prompt": "Is 585 even or odd? Answer 0 for even, 1 for odd.",
+      "gold": 1,
+      "trap": 0,
+      "id": 352
+    },
+    {
+      "kind": "parity_trap",
+      "prompt": "Is 923 even or odd? Answer 0 for even, 1 for odd.",
+      "gold": 1,
+      "trap": 0,
+      "id": 353
+    },
+    {
+      "kind": "parity_trap",
+      "prompt": "Is 875 even or odd? Answer 0 for even, 1 for odd.",
+      "gold": 1,
+      "trap": 0,
+      "id": 354
+    },
+    {
+      "kind": "parity_trap",
+      "prompt": "Is 701 even or odd? Answer 0 for even, 1 for odd.",
+      "gold": 1,
+      "trap": 0,
+      "id": 355
+    },
+    {
+      "kind": "parity_trap",
+      "prompt": "Is 873 even or odd? Answer 0 for even, 1 for odd.",
+      "gold": 1,
+      "trap": 0,
+      "id": 356
+    },
+    {
+      "kind": "parity_trap",
+      "prompt": "Is 695 even or odd? Answer 0 for even, 1 for odd.",
+      "gold": 1,
+      "trap": 0,
+      "id": 357
+    },
+    {
+      "kind": "parity_trap",
+      "prompt": "Is 597 even or odd? Answer 0 for even, 1 for odd.",
+      "gold": 1,
+      "trap": 0,
+      "id": 358
+    },
+    {
+      "kind": "parity_trap",
+      "prompt": "Is 121 even or odd? Answer 0 for even, 1 for odd.",
+      "gold": 1,
+      "trap": 0,
+      "id": 359
+    },
+    {
+      "kind": "parity_trap",
+      "prompt": "Is 999 even or odd? Answer 0 for even, 1 for odd.",
+      "gold": 1,
+      "trap": 0,
+      "id": 360
+    },
+    {
+      "kind": "parity_trap",
+      "prompt": "Is 425 even or odd? Answer 0 for even, 1 for odd.",
+      "gold": 1,
+      "trap": 0,
+      "id": 361
+    },
+    {
+      "kind": "parity_trap",
+      "prompt": "Is 951 even or odd? Answer 0 for even, 1 for odd.",
+      "gold": 1,
+      "trap": 0,
+      "id": 362
+    },
+    {
+      "kind": "parity_trap",
+      "prompt": "Is 581 even or odd? Answer 0 for even, 1 for odd.",
+      "gold": 1,
+      "trap": 0,
+      "id": 363
+    },
+    {
+      "kind": "parity_trap",
+      "prompt": "Is 603 even or odd? Answer 0 for even, 1 for odd.",
+      "gold": 1,
+      "trap": 0,
+      "id": 364
+    },
+    {
+      "kind": "parity_trap",
+      "prompt": "Is 975 even or odd? Answer 0 for even, 1 for odd.",
+      "gold": 1,
+      "trap": 0,
+      "id": 365
+    },
+    {
+      "kind": "parity_trap",
+      "prompt": "Is 669 even or odd? Answer 0 for even, 1 for odd.",
+      "gold": 1,
+      "trap": 0,
+      "id": 366
+    },
+    {
+      "kind": "parity_trap",
+      "prompt": "Is 855 even or odd? Answer 0 for even, 1 for odd.",
+      "gold": 1,
+      "trap": 0,
+      "id": 367
+    },
+    {
+      "kind": "parity_trap",
+      "prompt": "Is 331 even or odd? Answer 0 for even, 1 for odd.",
+      "gold": 1,
+      "trap": 0,
+      "id": 368
+    },
+    {
+      "kind": "parity_trap",
+      "prompt": "Is 497 even or odd? Answer 0 for even, 1 for odd.",
+      "gold": 1,
+      "trap": 0,
+      "id": 369
+    },
+    {
+      "kind": "parity_trap",
+      "prompt": "Is 131 even or odd? Answer 0 for even, 1 for odd.",
+      "gold": 1,
+      "trap": 0,
+      "id": 370
+    },
+    {
+      "kind": "parity_trap",
+      "prompt": "Is 823 even or odd? Answer 0 for even, 1 for odd.",
+      "gold": 1,
+      "trap": 0,
+      "id": 371
+    },
+    {
+      "kind": "parity_trap",
+      "prompt": "Is 523 even or odd? Answer 0 for even, 1 for odd.",
+      "gold": 1,
+      "trap": 0,
+      "id": 372
+    },
+    {
+      "kind": "parity_trap",
+      "prompt": "Is 805 even or odd? Answer 0 for even, 1 for odd.",
+      "gold": 1,
+      "trap": 0,
+      "id": 373
+    },
+    {
+      "kind": "parity_trap",
+      "prompt": "Is 905 even or odd? Answer 0 for even, 1 for odd.",
+      "gold": 1,
+      "trap": 0,
+      "id": 374
+    },
+    {
+      "kind": "units",
+      "prompt": "A car travels 92 km. How many meters is that?",
+      "gold": 92000,
+      "trap": 9200,
+      "id": 375
+    },
+    {
+      "kind": "units",
+      "prompt": "A car travels 80 km. How many meters is that?",
+      "gold": 80000,
+      "trap": 8000,
+      "id": 376
+    },
+    {
+      "kind": "units",
+      "prompt": "A car travels 85 km. How many meters is that?",
+      "gold": 85000,
+      "trap": 8500,
+      "id": 377
+    },
+    {
+      "kind": "units",
+      "prompt": "A car travels 32 km. How many meters is that?",
+      "gold": 32000,
+      "trap": 3200,
+      "id": 378
+    },
+    {
+      "kind": "units",
+      "prompt": "A car travels 17 km. How many meters is that?",
+      "gold": 17000,
+      "trap": 1700,
+      "id": 379
+    },
+    {
+      "kind": "units",
+      "prompt": "A car travels 90 km. How many meters is that?",
+      "gold": 90000,
+      "trap": 9000,
+      "id": 380
+    },
+    {
+      "kind": "units",
+      "prompt": "A car travels 56 km. How many meters is that?",
+      "gold": 56000,
+      "trap": 5600,
+      "id": 381
+    },
+    {
+      "kind": "units",
+      "prompt": "A car travels 3 km. How many meters is that?",
+      "gold": 3000,
+      "trap": 300,
+      "id": 382
+    },
+    {
+      "kind": "units",
+      "prompt": "A car travels 99 km. How many meters is that?",
+      "gold": 99000,
+      "trap": 9900,
+      "id": 383
+    },
+    {
+      "kind": "units",
+      "prompt": "A car travels 64 km. How many meters is that?",
+      "gold": 64000,
+      "trap": 6400,
+      "id": 384
+    },
+    {
+      "kind": "units",
+      "prompt": "A car travels 59 km. How many meters is that?",
+      "gold": 59000,
+      "trap": 5900,
+      "id": 385
+    },
+    {
+      "kind": "units",
+      "prompt": "A car travels 24 km. How many meters is that?",
+      "gold": 24000,
+      "trap": 2400,
+      "id": 386
+    },
+    {
+      "kind": "units",
+      "prompt": "A car travels 29 km. How many meters is that?",
+      "gold": 29000,
+      "trap": 2900,
+      "id": 387
+    },
+    {
+      "kind": "units",
+      "prompt": "A car travels 52 km. How many meters is that?",
+      "gold": 52000,
+      "trap": 5200,
+      "id": 388
+    },
+    {
+      "kind": "units",
+      "prompt": "A car travels 49 km. How many meters is that?",
+      "gold": 49000,
+      "trap": 4900,
+      "id": 389
+    },
+    {
+      "kind": "units",
+      "prompt": "A car travels 8 km. How many meters is that?",
+      "gold": 8000,
+      "trap": 800,
+      "id": 390
+    },
+    {
+      "kind": "units",
+      "prompt": "A car travels 78 km. How many meters is that?",
+      "gold": 78000,
+      "trap": 7800,
+      "id": 391
+    },
+    {
+      "kind": "units",
+      "prompt": "A car travels 19 km. How many meters is that?",
+      "gold": 19000,
+      "trap": 1900,
+      "id": 392
+    },
+    {
+      "kind": "units",
+      "prompt": "A car travels 47 km. How many meters is that?",
+      "gold": 47000,
+      "trap": 4700,
+      "id": 393
+    },
+    {
+      "kind": "units",
+      "prompt": "A car travels 36 km. How many meters is that?",
+      "gold": 36000,
+      "trap": 3600,
+      "id": 394
+    },
+    {
+      "kind": "units",
+      "prompt": "A car travels 69 km. How many meters is that?",
+      "gold": 69000,
+      "trap": 6900,
+      "id": 395
+    },
+    {
+      "kind": "units",
+      "prompt": "A car travels 46 km. How many meters is that?",
+      "gold": 46000,
+      "trap": 4600,
+      "id": 396
+    },
+    {
+      "kind": "units",
+      "prompt": "A car travels 55 km. How many meters is that?",
+      "gold": 55000,
+      "trap": 5500,
+      "id": 397
+    },
+    {
+      "kind": "units",
+      "prompt": "A car travels 94 km. How many meters is that?",
+      "gold": 94000,
+      "trap": 9400,
+      "id": 398
+    },
+    {
+      "kind": "units",
+      "prompt": "A car travels 53 km. How many meters is that?",
+      "gold": 53000,
+      "trap": 5300,
+      "id": 399
+    },
+    {
+      "kind": "units",
+      "prompt": "A car travels 48 km. How many meters is that?",
+      "gold": 48000,
+      "trap": 4800,
+      "id": 400
+    },
+    {
+      "kind": "units",
+      "prompt": "A car travels 30 km. How many meters is that?",
+      "gold": 30000,
+      "trap": 3000,
+      "id": 401
+    },
+    {
+      "kind": "units",
+      "prompt": "A car travels 26 km. How many meters is that?",
+      "gold": 26000,
+      "trap": 2600,
+      "id": 402
+    },
+    {
+      "kind": "units",
+      "prompt": "A car travels 93 km. How many meters is that?",
+      "gold": 93000,
+      "trap": 9300,
+      "id": 403
+    },
+    {
+      "kind": "units",
+      "prompt": "A car travels 23 km. How many meters is that?",
+      "gold": 23000,
+      "trap": 2300,
+      "id": 404
+    },
+    {
+      "kind": "units",
+      "prompt": "A car travels 14 km. How many meters is that?",
+      "gold": 14000,
+      "trap": 1400,
+      "id": 405
+    },
+    {
+      "kind": "units",
+      "prompt": "A car travels 13 km. How many meters is that?",
+      "gold": 13000,
+      "trap": 1300,
+      "id": 406
+    },
+    {
+      "kind": "units",
+      "prompt": "A car travels 34 km. How many meters is that?",
+      "gold": 34000,
+      "trap": 3400,
+      "id": 407
+    },
+    {
+      "kind": "units",
+      "prompt": "A car travels 31 km. How many meters is that?",
+      "gold": 31000,
+      "trap": 3100,
+      "id": 408
+    },
+    {
+      "kind": "units",
+      "prompt": "A car travels 74 km. How many meters is that?",
+      "gold": 74000,
+      "trap": 7400,
+      "id": 409
+    },
+    {
+      "kind": "units",
+      "prompt": "A car travels 73 km. How many meters is that?",
+      "gold": 73000,
+      "trap": 7300,
+      "id": 410
+    },
+    {
+      "kind": "units",
+      "prompt": "A car travels 83 km. How many meters is that?",
+      "gold": 83000,
+      "trap": 8300,
+      "id": 411
+    },
+    {
+      "kind": "units",
+      "prompt": "A car travels 22 km. How many meters is that?",
+      "gold": 22000,
+      "trap": 2200,
+      "id": 412
+    },
+    {
+      "kind": "units",
+      "prompt": "A car travels 5 km. How many meters is that?",
+      "gold": 5000,
+      "trap": 500,
+      "id": 413
+    },
+    {
+      "kind": "units",
+      "prompt": "A car travels 45 km. How many meters is that?",
+      "gold": 45000,
+      "trap": 4500,
+      "id": 414
+    },
+    {
+      "kind": "units",
+      "prompt": "A car travels 20 km. How many meters is that?",
+      "gold": 20000,
+      "trap": 2000,
+      "id": 415
+    },
+    {
+      "kind": "units",
+      "prompt": "A car travels 98 km. How many meters is that?",
+      "gold": 98000,
+      "trap": 9800,
+      "id": 416
+    },
+    {
+      "kind": "units",
+      "prompt": "A car travels 10 km. How many meters is that?",
+      "gold": 10000,
+      "trap": 1000,
+      "id": 417
+    },
+    {
+      "kind": "units",
+      "prompt": "A car travels 25 km. How many meters is that?",
+      "gold": 25000,
+      "trap": 2500,
+      "id": 418
+    },
+    {
+      "kind": "units",
+      "prompt": "A car travels 81 km. How many meters is that?",
+      "gold": 81000,
+      "trap": 8100,
+      "id": 419
+    },
+    {
+      "kind": "units",
+      "prompt": "A car travels 75 km. How many meters is that?",
+      "gold": 75000,
+      "trap": 7500,
+      "id": 420
+    },
+    {
+      "kind": "units",
+      "prompt": "A car travels 28 km. How many meters is that?",
+      "gold": 28000,
+      "trap": 2800,
+      "id": 421
+    },
+    {
+      "kind": "units",
+      "prompt": "A car travels 2 km. How many meters is that?",
+      "gold": 2000,
+      "trap": 200,
+      "id": 422
+    },
+    {
+      "kind": "units",
+      "prompt": "A car travels 67 km. How many meters is that?",
+      "gold": 67000,
+      "trap": 6700,
+      "id": 423
+    },
+    {
+      "kind": "units",
+      "prompt": "A car travels 62 km. How many meters is that?",
+      "gold": 62000,
+      "trap": 6200,
+      "id": 424
+    },
+    {
+      "kind": "units",
+      "prompt": "A car travels 4 km. How many meters is that?",
+      "gold": 4000,
+      "trap": 400,
+      "id": 425
+    },
+    {
+      "kind": "units",
+      "prompt": "A car travels 96 km. How many meters is that?",
+      "gold": 96000,
+      "trap": 9600,
+      "id": 426
+    },
+    {
+      "kind": "units",
+      "prompt": "A car travels 40 km. How many meters is that?",
+      "gold": 40000,
+      "trap": 4000,
+      "id": 427
+    },
+    {
+      "kind": "units",
+      "prompt": "A car travels 43 km. How many meters is that?",
+      "gold": 43000,
+      "trap": 4300,
+      "id": 428
+    },
+    {
+      "kind": "units",
+      "prompt": "A car travels 51 km. How many meters is that?",
+      "gold": 51000,
+      "trap": 5100,
+      "id": 429
+    },
+    {
+      "kind": "units",
+      "prompt": "A car travels 79 km. How many meters is that?",
+      "gold": 79000,
+      "trap": 7900,
+      "id": 430
+    },
+    {
+      "kind": "units",
+      "prompt": "A car travels 39 km. How many meters is that?",
+      "gold": 39000,
+      "trap": 3900,
+      "id": 431
+    },
+    {
+      "kind": "units",
+      "prompt": "A car travels 41 km. How many meters is that?",
+      "gold": 41000,
+      "trap": 4100,
+      "id": 432
+    },
+    {
+      "kind": "units",
+      "prompt": "A car travels 50 km. How many meters is that?",
+      "gold": 50000,
+      "trap": 5000,
+      "id": 433
+    },
+    {
+      "kind": "units",
+      "prompt": "A car travels 89 km. How many meters is that?",
+      "gold": 89000,
+      "trap": 8900,
+      "id": 434
+    },
+    {
+      "kind": "units",
+      "prompt": "A car travels 18 km. How many meters is that?",
+      "gold": 18000,
+      "trap": 1800,
+      "id": 435
+    },
+    {
+      "kind": "units",
+      "prompt": "A car travels 70 km. How many meters is that?",
+      "gold": 70000,
+      "trap": 7000,
+      "id": 436
+    },
+    {
+      "kind": "units",
+      "prompt": "A car travels 61 km. How many meters is that?",
+      "gold": 61000,
+      "trap": 6100,
+      "id": 437
+    },
+    {
+      "kind": "units",
+      "prompt": "A car travels 66 km. How many meters is that?",
+      "gold": 66000,
+      "trap": 6600,
+      "id": 438
+    },
+    {
+      "kind": "units",
+      "prompt": "A car travels 42 km. How many meters is that?",
+      "gold": 42000,
+      "trap": 4200,
+      "id": 439
+    },
+    {
+      "kind": "units",
+      "prompt": "A car travels 63 km. How many meters is that?",
+      "gold": 63000,
+      "trap": 6300,
+      "id": 440
+    },
+    {
+      "kind": "units",
+      "prompt": "A car travels 21 km. How many meters is that?",
+      "gold": 21000,
+      "trap": 2100,
+      "id": 441
+    },
+    {
+      "kind": "units",
+      "prompt": "A car travels 11 km. How many meters is that?",
+      "gold": 11000,
+      "trap": 1100,
+      "id": 442
+    },
+    {
+      "kind": "units",
+      "prompt": "A car travels 88 km. How many meters is that?",
+      "gold": 88000,
+      "trap": 8800,
+      "id": 443
+    },
+    {
+      "kind": "units",
+      "prompt": "A car travels 71 km. How many meters is that?",
+      "gold": 71000,
+      "trap": 7100,
+      "id": 444
+    },
+    {
+      "kind": "units",
+      "prompt": "A car travels 97 km. How many meters is that?",
+      "gold": 97000,
+      "trap": 9700,
+      "id": 445
+    },
+    {
+      "kind": "units",
+      "prompt": "A car travels 44 km. How many meters is that?",
+      "gold": 44000,
+      "trap": 4400,
+      "id": 446
+    },
+    {
+      "kind": "units",
+      "prompt": "A car travels 60 km. How many meters is that?",
+      "gold": 60000,
+      "trap": 6000,
+      "id": 447
+    },
+    {
+      "kind": "units",
+      "prompt": "A car travels 57 km. How many meters is that?",
+      "gold": 57000,
+      "trap": 5700,
+      "id": 448
+    },
+    {
+      "kind": "units",
+      "prompt": "A car travels 7 km. How many meters is that?",
+      "gold": 7000,
+      "trap": 700,
+      "id": 449
+    },
+    {
+      "kind": "units",
+      "prompt": "A car travels 65 km. How many meters is that?",
+      "gold": 65000,
+      "trap": 6500,
+      "id": 450
+    },
+    {
+      "kind": "units",
+      "prompt": "A car travels 77 km. How many meters is that?",
+      "gold": 77000,
+      "trap": 7700,
+      "id": 451
+    },
+    {
+      "kind": "units",
+      "prompt": "A car travels 84 km. How many meters is that?",
+      "gold": 84000,
+      "trap": 8400,
+      "id": 452
+    },
+    {
+      "kind": "units",
+      "prompt": "A car travels 37 km. How many meters is that?",
+      "gold": 37000,
+      "trap": 3700,
+      "id": 453
+    },
+    {
+      "kind": "units",
+      "prompt": "A car travels 16 km. How many meters is that?",
+      "gold": 16000,
+      "trap": 1600,
+      "id": 454
+    },
+    {
+      "kind": "units",
+      "prompt": "A car travels 33 km. How many meters is that?",
+      "gold": 33000,
+      "trap": 3300,
+      "id": 455
+    },
+    {
+      "kind": "units",
+      "prompt": "A car travels 86 km. How many meters is that?",
+      "gold": 86000,
+      "trap": 8600,
+      "id": 456
+    },
+    {
+      "kind": "units",
+      "prompt": "A car travels 68 km. How many meters is that?",
+      "gold": 68000,
+      "trap": 6800,
+      "id": 457
+    },
+    {
+      "kind": "units",
+      "prompt": "A car travels 15 km. How many meters is that?",
+      "gold": 15000,
+      "trap": 1500,
+      "id": 458
+    },
+    {
+      "kind": "units",
+      "prompt": "A car travels 35 km. How many meters is that?",
+      "gold": 35000,
+      "trap": 3500,
+      "id": 459
+    },
+    {
+      "kind": "units",
+      "prompt": "A car travels 76 km. How many meters is that?",
+      "gold": 76000,
+      "trap": 7600,
+      "id": 460
+    },
+    {
+      "kind": "units",
+      "prompt": "A car travels 82 km. How many meters is that?",
+      "gold": 82000,
+      "trap": 8200,
+      "id": 461
+    },
+    {
+      "kind": "units",
+      "prompt": "A car travels 87 km. How many meters is that?",
+      "gold": 87000,
+      "trap": 8700,
+      "id": 462
+    },
+    {
+      "kind": "units",
+      "prompt": "A car travels 9 km. How many meters is that?",
+      "gold": 9000,
+      "trap": 900,
+      "id": 463
+    },
+    {
+      "kind": "units",
+      "prompt": "A car travels 58 km. How many meters is that?",
+      "gold": 58000,
+      "trap": 5800,
+      "id": 464
+    },
+    {
+      "kind": "units",
+      "prompt": "A car travels 12 km. How many meters is that?",
+      "gold": 12000,
+      "trap": 1200,
+      "id": 465
+    },
+    {
+      "kind": "units",
+      "prompt": "A car travels 27 km. How many meters is that?",
+      "gold": 27000,
+      "trap": 2700,
+      "id": 466
+    },
+    {
+      "kind": "units",
+      "prompt": "A car travels 72 km. How many meters is that?",
+      "gold": 72000,
+      "trap": 7200,
+      "id": 467
+    },
+    {
+      "kind": "units",
+      "prompt": "A car travels 95 km. How many meters is that?",
+      "gold": 95000,
+      "trap": 9500,
+      "id": 468
+    },
+    {
+      "kind": "units",
+      "prompt": "A car travels 6 km. How many meters is that?",
+      "gold": 6000,
+      "trap": 600,
+      "id": 469
+    },
+    {
+      "kind": "units",
+      "prompt": "A car travels 54 km. How many meters is that?",
+      "gold": 54000,
+      "trap": 5400,
+      "id": 470
+    },
+    {
+      "kind": "units",
+      "prompt": "A car travels 38 km. How many meters is that?",
+      "gold": 38000,
+      "trap": 3800,
+      "id": 471
+    },
+    {
+      "kind": "units",
+      "prompt": "A car travels 91 km. How many meters is that?",
+      "gold": 91000,
+      "trap": 9100,
+      "id": 472
+    }
+  ],
+  "sha256": "78446ba9bfca569db7bd9bac1600251e8e625632d811be48c1cb2b43e218832e"
+}
