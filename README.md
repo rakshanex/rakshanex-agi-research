@@ -1,4 +1,4 @@
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22918434.svg)](https://doi.org/10.5281/zenodo.22918434)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22918433.svg)](https://doi.org/10.5281/zenodo.22918433)
 
 # RAKSHANEX — ARC Prize 2026 Submission (ARC-AGI-2 track)
 
